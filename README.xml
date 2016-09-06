@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?asciidoc-toc?>
+<?asciidoc-numbered?>
+<book xmlns="http://docbook.org/ns/docbook" xmlns:xl="http://www.w3.org/1999/xlink" version="5.0" xml:lang="en">
+<info>
+<title>Operační systémy&#8201;&#8212;&#8201;servery (OSC)</title>
+<date>2016-09-06</date>
+</info>
+<preface>
+<title></title>
+<simpara>&#169; Lukáš Kotek <link xl:href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA 4.0</link></simpara>
+<note>
+<simpara>Tento dokument nemá ambici v žádném slova smyslu suplovat technickou dokumentaci, odborné publikace nebo učebnice, které se komplexně zabývají problematikou operačních systémů a síťování. Je základní osnovou a rozcestníkem směřujícím na další materiály vytvořeným pro účely středoškolského předmětu <emphasis>Operační systémy</emphasis>, konkrétně části cvičení zabývající se problematikou serverů a s tím souvisejících vybraných síťových služeb.</simpara>
+</note>
+<simpara><?asciidoc-pagebreak?></simpara>
+</preface>
+<chapter xml:id="_podklady">
+<title>Podklady</title>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara>MS Windows Server&#8201;&#8212;&#8201;licencování, role a použití [<link xl:href="01-windows-server-licence-role/01-windows-server-licence-role.html">html</link>] [<link xl:href="01-windows-server-licence-role/01-windows-server-licence-role.pdf">pdf</link>] [<link xl:href="01-windows-server-licence-role/01-windows-server-licence-role.adoc">asciidoc</link>]</simpara>
+</listitem>
+<listitem>
+<simpara>TO DO :-)</simpara>
+</listitem>
+</orderedlist>
+</chapter>
+</book>

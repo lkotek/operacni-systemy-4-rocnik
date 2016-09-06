@@ -3,7 +3,7 @@
 <?asciidoc-numbered?>
 <book xmlns="http://docbook.org/ns/docbook" xmlns:xl="http://www.w3.org/1999/xlink" version="5.0" xml:lang="en">
 <info>
-<title>MS Windows server&#8201;&#8212;&#8201;licencování, role a použití</title>
+<title>MS Windows Server&#8201;&#8212;&#8201;licencování, role a použití</title>
 <date>2016-09-06</date>
 </info>
 <preface>
@@ -28,7 +28,7 @@
 <simpara><?asciidoc-hr?></simpara>
 <itemizedlist>
 <listitem>
-<simpara>Přehled kapitol: [<link xl:href="../README.html">html</link>] [<link xl:href="../README.asciidoc">asciidoc</link>]</simpara>
+<simpara>Přehled kapitol: [<link xl:href="../README.html">html</link>] [<link xl:href="../README.pdf">pdf</link>] [<link xl:href="../README.asciidoc">asciidoc</link>]</simpara>
 </listitem>
 </itemizedlist>
 </chapter>

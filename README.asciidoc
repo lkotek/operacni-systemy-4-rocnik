@@ -10,9 +10,9 @@ NOTE: Tento dokument nemá ambici v žádném slova smyslu suplovat technickou d
 
 <<<
 
-== Cíl předmětu
-
 == Podklady
 
-. MS Windows server -- licencování, role a použití [link:01-windows-server-licence-role/01-windows-server-licence-role.html[html]] [link:01-windows-server-licence-role/01-windows-server-licence-role.pdf[pdf]] [link:01-windows-server-licence-role/01-windows-server-licence-role.adoc[asciidoc]]
+. MS Windows Server -- licencování, role a použití [link:01-windows-server-licence-role/01-windows-server-licence-role.html[html]] [link:01-windows-server-licence-role/01-windows-server-licence-role.pdf[pdf]] [link:01-windows-server-licence-role/01-windows-server-licence-role.adoc[asciidoc]]
+
+. TO DO :-)
 
