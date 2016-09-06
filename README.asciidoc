@@ -1,0 +1,11 @@
+= Operační systémy -- servery (OSC)
+:source-highlighter: coderay
+:listing-caption: Listing
+:pdf-page-size: A4
+:icons: font
+
+(C) Lukáš Kotek link:https://creativecommons.org/licenses/by-sa/4.0/[CC-BY-SA 4.0]
+
+Tento dokument nemá ambici v žádném slova smyslu suplovat technickou dokumentaci, odborné publikace nebo učebnice, které se komplexně zabývají problematikou operačních systémů a síťování. Je rozcestníkem vytvořeným pro účely středoškolského předmětu Operační systémy, konkrétně části cvičení zabývající se servery.
+
+<<<
