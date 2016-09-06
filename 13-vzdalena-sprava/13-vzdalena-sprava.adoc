@@ -1,0 +1,28 @@
+= Protokoly pro vzdálenou správu (ssh, telnet, rdp, vnc)
+:source-highlighter: coderay
+:listing-caption: Listing
+:pdf-page-size: A4
+:icons: font
+
+(C) Lukáš Kotek, link:https://creativecommons.org/licenses/by-sa/4.0/[CC-BY-SA 4.0]
+
+NOTE: Tento dokument je *NEHOTOVÁ* prázdná šablona. Materiály budou v rámci roku průběžně doplňovány.
+
+<<<
+
+== Klíčové pojmy
+
+TODO
+
+== Použité zdroje
+
+TODO
+
+== Kam dál?
+
+TODO
+
+---
+
+- Přehled kapitol: [link:../README.html[html]] [link:../README.md[asciidoc]]
+
