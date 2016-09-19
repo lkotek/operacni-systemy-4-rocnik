@@ -1,4 +1,4 @@
-= MS Windows Server -- licencování, role a použití
+= MS Windows Server -- licence a role; Virtualizace
 :source-highlighter: coderay
 :listing-caption: Listing
 :pdf-page-size: A4
@@ -6,9 +6,44 @@
 
 (C) Lukáš Kotek, link:https://creativecommons.org/licenses/by-sa/4.0/[CC-BY-SA 4.0]
 
-NOTE: Tento dokument je *NEHOTOVÁ* prázdná šablona. Materiály budou v rámci roku průběžně doplňovány.
-
 <<<
+
+== MS Windows Server
+=== Definice
+
+[quote, 'https://en.wikipedia.org/wiki/Windows_Server[Zdroj: en.wikipedia.org]']
+____
+Windows Server is a brand name for a group of server operating systems released by Microsoft. It includes all Windows operating systems branded "Windows Server", but not any other Microsoft product. The first Windows server edition to be released under that brand was Windows Server 2003.
+____
+
+IMPORTANT: *Jak tomu rozumět?* Vlastně špatně. Ms Windows Server je řada několika operačních systémů, která se liší v edicích (a na to navázaných rolích). Říci lze ale jedno: Je to severový operační systém, který implementuje práci s mnoha síťovými protokoly. A který poskytuje (právě pomocí zmíněnýc rolí) řadu služeb důležitých v počítačových sítích, ať již se jedná o role DNS a DHCP serveru nebo Active Directory.
+
+=== Licencování
+
+.Co musíme zohlednit:
+
+* Samotnou cenu za licenci MS Windows Serveru
+* Cenu za uživatele (nebo zařízení), kteří se budou k serveru připojovat
+
+.Co je to CAL?
+
+* Per User
+* Per Device
+
+.Co zohlednit při výběru edice MS Windows Serveru?
+
+* Licenční omezení ohledně hardware
+* Poskytované role v rámci edice
+
+NOTE: Přehledně je to shrnuto v následující tabulce -- TODO.
+
+=== Role serveru
+
+=== Active Directory
+
+== Virtualizace
+
+NOTE: Detailně byla virtualizace, její druhy a využití popsána ve třetím ročníku, podklady naleznete pod následujícími odkazy: *Virtualizační technologie, cloud computing*  [link:https://github.com/lukaskotek/operacni-systemy-3-rocnik/blob/master/02-virtualizace-cloudy/02-virtualizace-cloudy.html[html]] [link:https://github.com/lukaskotek/operacni-systemy-3-rocnik/blob/master/02-virtualizace-cloudy/02-virtualizace-cloudy.pdf[pdf]] [link:https://github.com/lukaskotek/operacni-systemy-3-rocnik/blob/master/02-virtualizace-cloudy/02-virtualizace-cloudy.adoc[asciidoc]].
 
 == Klíčové pojmy
 

@@ -5,7 +5,7 @@
 <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 1.5.4">
-<title>MS Windows Server&#8201;&#8212;&#8201;licencování, role a použití</title>
+<title>MS Windows Server&#8201;&#8212;&#8201;licence a role; Virtualizace</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
 /* Asciidoctor default stylesheet | MIT License | http://asciidoctor.org */
@@ -511,13 +511,79 @@ table.CodeRay td.code>pre{padding:0}
 </head>
 <body class="book">
 <div id="header">
-<h1>MS Windows Server&#8201;&#8212;&#8201;licencování, role a použití</h1>
+<h1>MS Windows Server&#8201;&#8212;&#8201;licence a role; Virtualizace</h1>
 </div>
 <div id="content">
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
 <p>&#169; Lukáš Kotek, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA 4.0</a></p>
+</div>
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_ms_windows_server">MS Windows Server</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_definice">Definice</h3>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>Windows Server is a brand name for a group of server operating systems released by Microsoft. It includes all Windows operating systems branded "Windows Server", but not any other Microsoft product. The first Windows server edition to be released under that brand was Windows Server 2003.</p>
+</div>
+</blockquote>
+<div class="attribution">
+&#8212; <a href="https://en.wikipedia.org/wiki/Windows_Server">Zdroj: en.wikipedia.org</a>
+</div>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<strong>Jak tomu rozumět?</strong> Vlastně špatně. Ms Windows Server je řada několika operačních systémů, která se liší v edicích (a na to navázaných rolích). Říci lze ale jedno: Je to severový operační systém, který implementuje práci s mnoha síťovými protokoly. A který poskytuje (právě pomocí zmíněnýc rolí) řadu služeb důležitých v počítačových sítích, ať již se jedná o role DNS a DHCP serveru nebo Active Directory.
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_licencování">Licencování</h3>
+<div class="ulist">
+<div class="title">Co musíme zohlednit:</div>
+<ul>
+<li>
+<p>Samotnou cenu za licenci MS Windows Serveru</p>
+</li>
+<li>
+<p>Cenu za uživatele (nebo zařízení), kteří se budou k serveru připojovat</p>
+</li>
+</ul>
+</div>
+<div class="ulist">
+<div class="title">Co je to CAL?</div>
+<ul>
+<li>
+<p>Per User</p>
+</li>
+<li>
+<p>Per Device</p>
+</li>
+</ul>
+</div>
+<div class="ulist">
+<div class="title">Co zohlednit při výběru edice MS Windows Serveru?</div>
+<ul>
+<li>
+<p>Licenční omezení ohledně hardware</p>
+</li>
+<li>
+<p>Poskytované role v rámci edice</p>
+</li>
+</ul>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -526,12 +592,37 @@ table.CodeRay td.code>pre{padding:0}
 <i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
-Tento dokument je <strong>NEHOTOVÁ</strong> prázdná šablona. Materiály budou v rámci roku průběžně doplňovány.
+Přehledně je to shrnuto v následující tabulce&#8201;&#8212;&#8201;TODO.
 </td>
 </tr>
 </table>
 </div>
-<div style="page-break-after: always;"></div>
+</div>
+<div class="sect2">
+<h3 id="_role_serveru">Role serveru</h3>
+
+</div>
+<div class="sect2">
+<h3 id="_active_directory">Active Directory</h3>
+
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_virtualizace">Virtualizace</h2>
+<div class="sectionbody">
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Detailně byla virtualizace, její druhy a využití popsána ve třetím ročníku, podklady naleznete pod následujícími odkazy: <strong>Virtualizační technologie, cloud computing</strong>  [<a href="https://github.com/lukaskotek/operacni-systemy-3-rocnik/blob/master/02-virtualizace-cloudy/02-virtualizace-cloudy.html">html</a>] [<a href="https://github.com/lukaskotek/operacni-systemy-3-rocnik/blob/master/02-virtualizace-cloudy/02-virtualizace-cloudy.pdf">pdf</a>] [<a href="https://github.com/lukaskotek/operacni-systemy-3-rocnik/blob/master/02-virtualizace-cloudy/02-virtualizace-cloudy.adoc">asciidoc</a>].
+</td>
+</tr>
+</table>
+</div>
 </div>
 </div>
 <div class="sect1">
@@ -569,7 +660,7 @@ Tento dokument je <strong>NEHOTOVÁ</strong> prázdná šablona. Materiály budo
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2016-09-06 18:15:36 CEST
+Last updated 2016-09-19 20:42:53 EEST
 </div>
 </div>
 </body>

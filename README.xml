@@ -4,7 +4,7 @@
 <book xmlns="http://docbook.org/ns/docbook" xmlns:xl="http://www.w3.org/1999/xlink" version="5.0" xml:lang="en">
 <info>
 <title>Operační systémy&#8201;&#8212;&#8201;servery (OSC)</title>
-<date>2016-09-06</date>
+<date>2016-09-19</date>
 </info>
 <preface>
 <title></title>
@@ -18,7 +18,7 @@
 <title>Podklady</title>
 <orderedlist numeration="arabic">
 <listitem>
-<simpara>MS Windows Server&#8201;&#8212;&#8201;licencování, role a použití [<link xl:href="01-windows-server-licence-role/01-windows-server-licence-role.html">html</link>] [<link xl:href="01-windows-server-licence-role/01-windows-server-licence-role.pdf">pdf</link>] [<link xl:href="01-windows-server-licence-role/01-windows-server-licence-role.adoc">asciidoc</link>]</simpara>
+<simpara>MS Windows Server — licence a role; Virtualizace [<link xl:href="01-windows-server-licence-role/01-windows-server-licence-role.html">html</link>] [<link xl:href="01-windows-server-licence-role/01-windows-server-licence-role.pdf">pdf</link>] [<link xl:href="01-windows-server-licence-role/01-windows-server-licence-role.adoc">asciidoc</link>]</simpara>
 </listitem>
 <listitem>
 <simpara>TO DO :-)</simpara>

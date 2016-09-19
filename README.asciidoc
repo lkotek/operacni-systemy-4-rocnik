@@ -12,7 +12,7 @@ NOTE: Tento dokument nemá ambici v žádném slova smyslu suplovat technickou d
 
 == Podklady
 
-. MS Windows Server -- licencování, role a použití [link:01-windows-server-licence-role/01-windows-server-licence-role.html[html]] [link:01-windows-server-licence-role/01-windows-server-licence-role.pdf[pdf]] [link:01-windows-server-licence-role/01-windows-server-licence-role.adoc[asciidoc]]
+. MS Windows Server — licence a role; Virtualizace [link:01-windows-server-licence-role/01-windows-server-licence-role.html[html]] [link:01-windows-server-licence-role/01-windows-server-licence-role.pdf[pdf]] [link:01-windows-server-licence-role/01-windows-server-licence-role.adoc[asciidoc]]
 
 . TO DO :-)
 

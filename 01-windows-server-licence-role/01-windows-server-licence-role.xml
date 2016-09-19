@@ -3,17 +3,76 @@
 <?asciidoc-numbered?>
 <book xmlns="http://docbook.org/ns/docbook" xmlns:xl="http://www.w3.org/1999/xlink" version="5.0" xml:lang="en">
 <info>
-<title>MS Windows Server&#8201;&#8212;&#8201;licencování, role a použití</title>
-<date>2016-09-06</date>
+<title>MS Windows Server&#8201;&#8212;&#8201;licence a role; Virtualizace</title>
+<date>2016-09-19</date>
 </info>
 <preface>
 <title></title>
 <simpara>&#169; Lukáš Kotek, <link xl:href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA 4.0</link></simpara>
-<note>
-<simpara>Tento dokument je <emphasis role="strong">NEHOTOVÁ</emphasis> prázdná šablona. Materiály budou v rámci roku průběžně doplňovány.</simpara>
-</note>
 <simpara><?asciidoc-pagebreak?></simpara>
 </preface>
+<chapter xml:id="_ms_windows_server">
+<title>MS Windows Server</title>
+<section xml:id="_definice">
+<title>Definice</title>
+<blockquote>
+<attribution>
+<link xl:href="https://en.wikipedia.org/wiki/Windows_Server">Zdroj: en.wikipedia.org</link>
+</attribution>
+<simpara>Windows Server is a brand name for a group of server operating systems released by Microsoft. It includes all Windows operating systems branded "Windows Server", but not any other Microsoft product. The first Windows server edition to be released under that brand was Windows Server 2003.</simpara>
+</blockquote>
+<important>
+<simpara><emphasis role="strong">Jak tomu rozumět?</emphasis> Vlastně špatně. Ms Windows Server je řada několika operačních systémů, která se liší v edicích (a na to navázaných rolích). Říci lze ale jedno: Je to severový operační systém, který implementuje práci s mnoha síťovými protokoly. A který poskytuje (právě pomocí zmíněnýc rolí) řadu služeb důležitých v počítačových sítích, ať již se jedná o role DNS a DHCP serveru nebo Active Directory.</simpara>
+</important>
+</section>
+<section xml:id="_licencování">
+<title>Licencování</title>
+<itemizedlist>
+<title>Co musíme zohlednit:</title>
+<listitem>
+<simpara>Samotnou cenu za licenci MS Windows Serveru</simpara>
+</listitem>
+<listitem>
+<simpara>Cenu za uživatele (nebo zařízení), kteří se budou k serveru připojovat</simpara>
+</listitem>
+</itemizedlist>
+<itemizedlist>
+<title>Co je to CAL?</title>
+<listitem>
+<simpara>Per User</simpara>
+</listitem>
+<listitem>
+<simpara>Per Device</simpara>
+</listitem>
+</itemizedlist>
+<itemizedlist>
+<title>Co zohlednit při výběru edice MS Windows Serveru?</title>
+<listitem>
+<simpara>Licenční omezení ohledně hardware</simpara>
+</listitem>
+<listitem>
+<simpara>Poskytované role v rámci edice</simpara>
+</listitem>
+</itemizedlist>
+<note>
+<simpara>Přehledně je to shrnuto v následující tabulce&#8201;&#8212;&#8201;TODO.</simpara>
+</note>
+</section>
+<section xml:id="_role_serveru">
+<title>Role serveru</title>
+
+</section>
+<section xml:id="_active_directory">
+<title>Active Directory</title>
+
+</section>
+</chapter>
+<chapter xml:id="_virtualizace">
+<title>Virtualizace</title>
+<note>
+<simpara>Detailně byla virtualizace, její druhy a využití popsána ve třetím ročníku, podklady naleznete pod následujícími odkazy: <emphasis role="strong">Virtualizační technologie, cloud computing</emphasis>  [<link xl:href="https://github.com/lukaskotek/operacni-systemy-3-rocnik/blob/master/02-virtualizace-cloudy/02-virtualizace-cloudy.html">html</link>] [<link xl:href="https://github.com/lukaskotek/operacni-systemy-3-rocnik/blob/master/02-virtualizace-cloudy/02-virtualizace-cloudy.pdf">pdf</link>] [<link xl:href="https://github.com/lukaskotek/operacni-systemy-3-rocnik/blob/master/02-virtualizace-cloudy/02-virtualizace-cloudy.adoc">asciidoc</link>].</simpara>
+</note>
+</chapter>
 <chapter xml:id="_klíčové_pojmy">
 <title>Klíčové pojmy</title>
 <simpara>TODO</simpara>
