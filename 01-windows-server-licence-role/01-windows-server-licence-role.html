@@ -544,16 +544,17 @@ table.CodeRay td.code>pre{padding:0}
 <i class="fa icon-important" title="Important"></i>
 </td>
 <td class="content">
-<strong>Jak tomu rozumět?</strong> Vlastně špatně. Ms Windows Server je řada několika operačních systémů, která se liší v edicích (a na to navázaných rolích). Říci lze ale jedno: Je to severový operační systém, který implementuje práci s mnoha síťovými protokoly. A který poskytuje (právě pomocí zmíněnýc rolí) řadu služeb důležitých v počítačových sítích, ať již se jedná o role DNS a DHCP serveru nebo Active Directory.
+<strong>Jak tomu rozumět?</strong> Vlastně špatně (nadsázka). MS Windows Server je řada několika operačních systémů, která se liší v edicích (a na to navázaných rolích). Říci lze ale jedno: Je to serverový operační systém, který implementuje práci s mnoha síťovými protokoly. A který poskytuje (právě pomocí zmíněných rolí) řadu služeb důležitých v počítačových sítích, ať již se jedná o role DNS a DHCP serveru nebo <strong>Active Directory</strong>.
 </td>
 </tr>
 </table>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_licencování">Licencování</h3>
+<h3 id="_licencování_ms_windows_serveru">Licencování MS Windows Serveru</h3>
+<div class="sect3">
+<h4 id="_co_musíme_zohlednit">Co musíme zohlednit?</h4>
 <div class="ulist">
-<div class="title">Co musíme zohlednit:</div>
 <ul>
 <li>
 <p>Samotnou cenu za licenci MS Windows Serveru</p>
@@ -563,27 +564,66 @@ table.CodeRay td.code>pre{padding:0}
 </li>
 </ul>
 </div>
-<div class="ulist">
-<div class="title">Co je to CAL?</div>
-<ul>
-<li>
-<p>Per User</p>
-</li>
-<li>
-<p>Per Device</p>
-</li>
-</ul>
 </div>
-<div class="ulist">
-<div class="title">Co zohlednit při výběru edice MS Windows Serveru?</div>
-<ul>
+<div class="sect3">
+<h4 id="_Čím_se_liší_edice_ms_windows_serveru">Čím se liší edice MS Windows Serveru?</h4>
+<div class="olist arabic">
+<ol class="arabic">
 <li>
-<p>Licenční omezení ohledně hardware</p>
+<p>Cenou samotné licence</p>
 </li>
 <li>
-<p>Poskytované role v rámci edice</p>
+<p>Poskytovanou funkcionalitou (rolemi)</p>
 </li>
-</ul>
+<li>
+<p>Licenčními omezeními</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Hardware (viz dále)</p>
+</li>
+<li>
+<p>Počtem uživatelů a zařízení, pro které jsou funkce serveru poskytovány</p>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_co_je_to_cal">Co je to CAL?</h4>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+Zkratka znamená <strong>C</strong>lient <strong>A</strong>ccess <strong>L</strong>icence.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<div class="title">Varianta "Per User":</div>
+<p>Pořizujeme množství licencí <strong>pro uživatele</strong>, kteří se budou připojovat k serveru. Lze nakoupit po balíčcích.</p>
+</div>
+<div class="paragraph">
+<div class="title">Varianta "Per Client":</div>
+<p>Pořizujeme licence <strong>pro zařízení</strong>, která se budou připojovat k danému serveru (opět, lze nakoupit po balíčcích).</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+Slovo <em>client</em> je zde použito v konzervativním významu poplatném světu informačních technologií. Vzpoměňte na architekturu <strong>klient-server</strong>. Není to člověk, je to zařízení.
+</td>
+</tr>
+</table>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -592,19 +632,101 @@ table.CodeRay td.code>pre{padding:0}
 <i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
-Přehledně je to shrnuto v následující tabulce&#8201;&#8212;&#8201;TODO.
+<strong>Otázka na tělo:</strong> Co se vyplatí v organizaci používající <strong>100 počítačů</strong> a mající <strong>600 uživatelů</strong> PC? (&#8230;&#8203;) Ano, správně je to CAL typu "Per Client".
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_co_zohlednit_při_výběru_edice_ms_windows_serveru">Co zohlednit při výběru edice MS Windows Serveru?</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Licenční omezení ohledně hardware (primárně operační paměti a počtu socketů serveru) a limitů poskytovaných služeb (například omezení počtu souběžných připojení protokolem SMB).</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+Vzpomínáte na protokol SMB aka <strong>S</strong>erver <strong>M</strong>essage <strong>B</strong>lock? Jedná se o protokol, který umožňuje sdílení protředků (tzn. souborů, složek, tiskáren apod.) v sítích používajících MS Windows. Na GNU/Linuxu práci s ním implementuje software Samba.
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Přehledně je to shrnuto v následující <a href="http://www.microsoft.com/en-us/download/details.aspx?id=41703&amp;WT.mc_id=rss_alldownloads_all">tabulce</a>.
+</td>
+</tr>
+</table>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Poskytované role v rámci edice (opět viz výše  zmíněná tabulka)</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+Nehledejte v tom složitost. Co role, to poskytovaná funkcionalita v rámci serveru. Mnoho jich znáte, vzpoměňte na různé síťové služby. DHCP, DNS, pošta, webserver, souborový server? Vše jsou role MS Windows Serveru, pod než spadají různé dílčí služby.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_active_directory_ad">Active Directory (AD)</h3>
+<div class="paragraph">
+<p>Zcela zásadníní role MS Windows Serveru, která vyžaduje souběžnou instalaci role DNS serveru. Implementuje práci s protokolem LDAP a obsahuje katalog objektů v hierarchické struktuře. Objektem může být uživatel, skupina, organizační jednotka, učet počítače apod. AD tak poskytuje v konečném důsledku síťové účty, díky kterým lze realizovat (ve spolupráci s dalšími rolemi) např. cestovní profil.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Active Directory je klasickým případem adresářové služby. POZOR! Slovo adresář&#8201;&#8212;&#8201;<strong>directory</strong>&#8201;&#8212;&#8201;je použit v klasickém významu. Jde o adresář/seznam již zmíněných uživatelů, skupin apod.&#8201;&#8212;&#8201;stejně, jako strukturu jejich vzájemných vnoření, hierarchii. <strong>Nijak přímo nesouvisí s pojmem složka</strong>.
 </td>
 </tr>
 </table>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_role_serveru">Role serveru</h3>
-
+<h3 id="_ldap_strong_l_strong_ight_strong_d_strong_irectory_strong_a_strong_ccess_strong_p_strong_rotocol">LDAP (<strong>L</strong>ight <strong>D</strong>irectory <strong>A</strong>ccess <strong>P</strong>rotocol)</h3>
+<div class="paragraph">
+<p>Ve stručnosti protokol, se kterým pracuje (a který implementuje) Active Directory. <strong>Ale zdaleka nejen ten</strong>. S LDAP umí pracovat mnoho jiných aplikací, na GNU/Linuxu bude patrně nejznámější OpenLDAP, ale existují i řešení od firmy Novell a dalších.</p>
 </div>
-<div class="sect2">
-<h3 id="_active_directory">Active Directory</h3>
-
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+Vzpomínáte na pojmy jakou jsou DN (<strong>D</strong>istinguished <strong>N</strong>ame), CN (<strong>C</strong>ommon <strong>N</strong>ame), OU (<strong>O</strong>rganisation <strong>U</strong>nit), DC (<strong>D</strong>omain <strong>C</strong>omponent) a další? Všechny jsou poplatné právě výše zmíněnému protokolu.
+</td>
+</tr>
+</table>
+</div>
 </div>
 </div>
 </div>
@@ -629,23 +751,54 @@ Detailně byla virtualizace, její druhy a využití popsána ve třetím ročn�
 <h2 id="_klíčové_pojmy">Klíčové pojmy</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>TODO</p>
+<p>MS Windows Server, edice, role, licence, CAL, per user, per client, Active Directory, LDAP, virtualizace, kontejnerová virtualizace, plná virtualizace, částečná virtualizace, softwarová virtualizace</p>
 </div>
 </div>
 </div>
 <div class="sect1">
 <h2 id="_použité_zdroje">Použité zdroje</h2>
 <div class="sectionbody">
-<div class="paragraph">
-<p>TODO</p>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><a href="https://en.wikipedia.org/wiki/Windows_Server" class="bare">https://en.wikipedia.org/wiki/Windows_Server</a></p>
+</li>
+<li>
+<p><a href="http://www.microsoft.com/en-us/download/details.aspx?id=41703&amp;WT.mc_id=rss_alldownloads_all" class="bare">http://www.microsoft.com/en-us/download/details.aspx?id=41703&amp;WT.mc_id=rss_alldownloads_all</a></p>
+</li>
+<li>
+<p><a href="https://www.novell.com/documentation/edir873/?page=/documentation/edir873/edir873/data/h0000007.html" class="bare">https://www.novell.com/documentation/edir873/?page=/documentation/edir873/edir873/data/h0000007.html</a></p>
+</li>
+</ol>
 </div>
 </div>
 </div>
 <div class="sect1">
 <h2 id="_kam_dál">Kam dál?</h2>
 <div class="sectionbody">
-<div class="paragraph">
-<p>TODO</p>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Naprosto geniální seriál o AD a LDAP, nenechte se zastrašit spartánským vzhledem:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="http://www.samuraj-cz.com/clanek/adresarove-sluzby-a-ldap/" class="bare">http://www.samuraj-cz.com/clanek/adresarove-sluzby-a-ldap/</a></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>A ještě jeden skvělý, byť opět starší seriál o LDAP:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="http://www.root.cz/clanky/lehky-uvod-do-ldap/" class="bare">http://www.root.cz/clanky/lehky-uvod-do-ldap/</a></p>
+</li>
+</ul>
+</div>
+</li>
+</ol>
 </div>
 <hr>
 <div class="ulist">
@@ -660,7 +813,7 @@ Detailně byla virtualizace, její druhy a využití popsána ve třetím ročn�
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2016-09-19 20:42:53 EEST
+Last updated 2016-09-21 18:17:21 EEST
 </div>
 </div>
 </body>

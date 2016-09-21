@@ -4,7 +4,7 @@
 <book xmlns="http://docbook.org/ns/docbook" xmlns:xl="http://www.w3.org/1999/xlink" version="5.0" xml:lang="en">
 <info>
 <title>MS Windows Server&#8201;&#8212;&#8201;licence a role; Virtualizace</title>
-<date>2016-09-19</date>
+<date>2016-09-21</date>
 </info>
 <preface>
 <title></title>
@@ -22,13 +22,14 @@
 <simpara>Windows Server is a brand name for a group of server operating systems released by Microsoft. It includes all Windows operating systems branded "Windows Server", but not any other Microsoft product. The first Windows server edition to be released under that brand was Windows Server 2003.</simpara>
 </blockquote>
 <important>
-<simpara><emphasis role="strong">Jak tomu rozumět?</emphasis> Vlastně špatně. Ms Windows Server je řada několika operačních systémů, která se liší v edicích (a na to navázaných rolích). Říci lze ale jedno: Je to severový operační systém, který implementuje práci s mnoha síťovými protokoly. A který poskytuje (právě pomocí zmíněnýc rolí) řadu služeb důležitých v počítačových sítích, ať již se jedná o role DNS a DHCP serveru nebo Active Directory.</simpara>
+<simpara><emphasis role="strong">Jak tomu rozumět?</emphasis> Vlastně špatně (nadsázka). MS Windows Server je řada několika operačních systémů, která se liší v edicích (a na to navázaných rolích). Říci lze ale jedno: Je to serverový operační systém, který implementuje práci s mnoha síťovými protokoly. A který poskytuje (právě pomocí zmíněných rolí) řadu služeb důležitých v počítačových sítích, ať již se jedná o role DNS a DHCP serveru nebo <emphasis role="strong">Active Directory</emphasis>.</simpara>
 </important>
 </section>
-<section xml:id="_licencování">
-<title>Licencování</title>
+<section xml:id="_licencování_ms_windows_serveru">
+<title>Licencování MS Windows Serveru</title>
+<section xml:id="_co_musíme_zohlednit">
+<title>Co musíme zohlednit?</title>
 <itemizedlist>
-<title>Co musíme zohlednit:</title>
 <listitem>
 <simpara>Samotnou cenu za licenci MS Windows Serveru</simpara>
 </listitem>
@@ -36,35 +37,85 @@
 <simpara>Cenu za uživatele (nebo zařízení), kteří se budou k serveru připojovat</simpara>
 </listitem>
 </itemizedlist>
-<itemizedlist>
+</section>
+<section xml:id="_Čím_se_liší_edice_ms_windows_serveru">
+<title>Čím se liší edice MS Windows Serveru?</title>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara>Cenou samotné licence</simpara>
+</listitem>
+<listitem>
+<simpara>Poskytovanou funkcionalitou (rolemi)</simpara>
+</listitem>
+<listitem>
+<simpara>Licenčními omezeními</simpara>
+<orderedlist numeration="loweralpha">
+<listitem>
+<simpara>Hardware (viz dále)</simpara>
+</listitem>
+<listitem>
+<simpara>Počtem uživatelů a zařízení, pro které jsou funkce serveru poskytovány</simpara>
+</listitem>
+</orderedlist>
+</listitem>
+</orderedlist>
+</section>
+<section xml:id="_co_je_to_cal">
 <title>Co je to CAL?</title>
-<listitem>
-<simpara>Per User</simpara>
-</listitem>
-<listitem>
-<simpara>Per Device</simpara>
-</listitem>
-</itemizedlist>
-<itemizedlist>
-<title>Co zohlednit při výběru edice MS Windows Serveru?</title>
-<listitem>
-<simpara>Licenční omezení ohledně hardware</simpara>
-</listitem>
-<listitem>
-<simpara>Poskytované role v rámci edice</simpara>
-</listitem>
-</itemizedlist>
+<tip>
+<simpara>Zkratka znamená <emphasis role="strong">C</emphasis>lient <emphasis role="strong">A</emphasis>ccess <emphasis role="strong">L</emphasis>icence.</simpara>
+</tip>
+<formalpara>
+<title>Varianta "Per User":</title>
+<para>Pořizujeme množství licencí <emphasis role="strong">pro uživatele</emphasis>, kteří se budou připojovat k serveru. Lze nakoupit po balíčcích.</para>
+</formalpara>
+<formalpara>
+<title>Varianta "Per Client":</title>
+<para>Pořizujeme licence <emphasis role="strong">pro zařízení</emphasis>, která se budou připojovat k danému serveru (opět, lze nakoupit po balíčcích).</para>
+</formalpara>
+<tip>
+<simpara>Slovo <emphasis>client</emphasis> je zde použito v konzervativním významu poplatném světu informačních technologií. Vzpoměňte na architekturu <emphasis role="strong">klient-server</emphasis>. Není to člověk, je to zařízení.</simpara>
+</tip>
 <note>
-<simpara>Přehledně je to shrnuto v následující tabulce&#8201;&#8212;&#8201;TODO.</simpara>
+<simpara><emphasis role="strong">Otázka na tělo:</emphasis> Co se vyplatí v organizaci používající <emphasis role="strong">100 počítačů</emphasis> a mající <emphasis role="strong">600 uživatelů</emphasis> PC? (&#8230;&#8203;) Ano, správně je to CAL typu "Per Client".</simpara>
 </note>
 </section>
-<section xml:id="_role_serveru">
-<title>Role serveru</title>
-
+<section xml:id="_co_zohlednit_při_výběru_edice_ms_windows_serveru">
+<title>Co zohlednit při výběru edice MS Windows Serveru?</title>
+<itemizedlist>
+<listitem>
+<simpara>Licenční omezení ohledně hardware (primárně operační paměti a počtu socketů serveru) a limitů poskytovaných služeb (například omezení počtu souběžných připojení protokolem SMB).</simpara>
+</listitem>
+</itemizedlist>
+<tip>
+<simpara>Vzpomínáte na protokol SMB aka <emphasis role="strong">S</emphasis>erver <emphasis role="strong">M</emphasis>essage <emphasis role="strong">B</emphasis>lock? Jedná se o protokol, který umožňuje sdílení protředků (tzn. souborů, složek, tiskáren apod.) v sítích používajících MS Windows. Na GNU/Linuxu práci s ním implementuje software Samba.</simpara>
+</tip>
+<note>
+<simpara>Přehledně je to shrnuto v následující <link xl:href="http://www.microsoft.com/en-us/download/details.aspx?id=41703&amp;WT.mc_id=rss_alldownloads_all">tabulce</link>.</simpara>
+</note>
+<itemizedlist>
+<listitem>
+<simpara>Poskytované role v rámci edice (opět viz výše  zmíněná tabulka)</simpara>
+</listitem>
+</itemizedlist>
+<tip>
+<simpara>Nehledejte v tom složitost. Co role, to poskytovaná funkcionalita v rámci serveru. Mnoho jich znáte, vzpoměňte na různé síťové služby. DHCP, DNS, pošta, webserver, souborový server? Vše jsou role MS Windows Serveru, pod než spadají různé dílčí služby.</simpara>
+</tip>
 </section>
-<section xml:id="_active_directory">
-<title>Active Directory</title>
-
+</section>
+<section xml:id="_active_directory_ad">
+<title>Active Directory (AD)</title>
+<simpara>Zcela zásadníní role MS Windows Serveru, která vyžaduje souběžnou instalaci role DNS serveru. Implementuje práci s protokolem LDAP a obsahuje katalog objektů v hierarchické struktuře. Objektem může být uživatel, skupina, organizační jednotka, učet počítače apod. AD tak poskytuje v konečném důsledku síťové účty, díky kterým lze realizovat (ve spolupráci s dalšími rolemi) např. cestovní profil.</simpara>
+<note>
+<simpara>Active Directory je klasickým případem adresářové služby. POZOR! Slovo adresář&#8201;&#8212;&#8201;<emphasis role="strong">directory</emphasis>&#8201;&#8212;&#8201;je použit v klasickém významu. Jde o adresář/seznam již zmíněných uživatelů, skupin apod.&#8201;&#8212;&#8201;stejně, jako strukturu jejich vzájemných vnoření, hierarchii. <emphasis role="strong">Nijak přímo nesouvisí s pojmem složka</emphasis>.</simpara>
+</note>
+</section>
+<section xml:id="_ldap_emphasis_role_strong_l_emphasis_ight_emphasis_role_strong_d_emphasis_irectory_emphasis_role_strong_a_emphasis_ccess_emphasis_role_strong_p_emphasis_rotocol">
+<title>LDAP (<emphasis role="strong">L</emphasis>ight <emphasis role="strong">D</emphasis>irectory <emphasis role="strong">A</emphasis>ccess <emphasis role="strong">P</emphasis>rotocol)</title>
+<simpara>Ve stručnosti protokol, se kterým pracuje (a který implementuje) Active Directory. <emphasis role="strong">Ale zdaleka nejen ten</emphasis>. S LDAP umí pracovat mnoho jiných aplikací, na GNU/Linuxu bude patrně nejznámější OpenLDAP, ale existují i řešení od firmy Novell a dalších.</simpara>
+<tip>
+<simpara>Vzpomínáte na pojmy jakou jsou DN (<emphasis role="strong">D</emphasis>istinguished <emphasis role="strong">N</emphasis>ame), CN (<emphasis role="strong">C</emphasis>ommon <emphasis role="strong">N</emphasis>ame), OU (<emphasis role="strong">O</emphasis>rganisation <emphasis role="strong">U</emphasis>nit), DC (<emphasis role="strong">D</emphasis>omain <emphasis role="strong">C</emphasis>omponent) a další? Všechny jsou poplatné právě výše zmíněnému protokolu.</simpara>
+</tip>
 </section>
 </chapter>
 <chapter xml:id="_virtualizace">
@@ -75,15 +126,42 @@
 </chapter>
 <chapter xml:id="_klíčové_pojmy">
 <title>Klíčové pojmy</title>
-<simpara>TODO</simpara>
+<simpara>MS Windows Server, edice, role, licence, CAL, per user, per client, Active Directory, LDAP, virtualizace, kontejnerová virtualizace, plná virtualizace, částečná virtualizace, softwarová virtualizace</simpara>
 </chapter>
 <chapter xml:id="_použité_zdroje">
 <title>Použité zdroje</title>
-<simpara>TODO</simpara>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara><link xl:href="https://en.wikipedia.org/wiki/Windows_Server">https://en.wikipedia.org/wiki/Windows_Server</link></simpara>
+</listitem>
+<listitem>
+<simpara><link xl:href="http://www.microsoft.com/en-us/download/details.aspx?id=41703&amp;WT.mc_id=rss_alldownloads_all">http://www.microsoft.com/en-us/download/details.aspx?id=41703&amp;WT.mc_id=rss_alldownloads_all</link></simpara>
+</listitem>
+<listitem>
+<simpara><link xl:href="https://www.novell.com/documentation/edir873/?page=/documentation/edir873/edir873/data/h0000007.html">https://www.novell.com/documentation/edir873/?page=/documentation/edir873/edir873/data/h0000007.html</link></simpara>
+</listitem>
+</orderedlist>
 </chapter>
 <chapter xml:id="_kam_dál">
 <title>Kam dál?</title>
-<simpara>TODO</simpara>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara>Naprosto geniální seriál o AD a LDAP, nenechte se zastrašit spartánským vzhledem:</simpara>
+<itemizedlist>
+<listitem>
+<simpara><link xl:href="http://www.samuraj-cz.com/clanek/adresarove-sluzby-a-ldap/">http://www.samuraj-cz.com/clanek/adresarove-sluzby-a-ldap/</link></simpara>
+</listitem>
+</itemizedlist>
+</listitem>
+<listitem>
+<simpara>A ještě jeden skvělý, byť opět starší seriál o LDAP:</simpara>
+<itemizedlist>
+<listitem>
+<simpara><link xl:href="http://www.root.cz/clanky/lehky-uvod-do-ldap/">http://www.root.cz/clanky/lehky-uvod-do-ldap/</link></simpara>
+</listitem>
+</itemizedlist>
+</listitem>
+</orderedlist>
 <simpara><?asciidoc-hr?></simpara>
 <itemizedlist>
 <listitem>

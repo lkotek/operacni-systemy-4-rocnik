@@ -16,30 +16,61 @@ ____
 Windows Server is a brand name for a group of server operating systems released by Microsoft. It includes all Windows operating systems branded "Windows Server", but not any other Microsoft product. The first Windows server edition to be released under that brand was Windows Server 2003.
 ____
 
-IMPORTANT: *Jak tomu rozumět?* Vlastně špatně. Ms Windows Server je řada několika operačních systémů, která se liší v edicích (a na to navázaných rolích). Říci lze ale jedno: Je to serverový operační systém, který implementuje práci s mnoha síťovými protokoly. A který poskytuje (právě pomocí zmíněnýc rolí) řadu služeb důležitých v počítačových sítích, ať již se jedná o role DNS a DHCP serveru nebo Active Directory.
+IMPORTANT: *Jak tomu rozumět?* Vlastně špatně (nadsázka). MS Windows Server je řada několika operačních systémů, která se liší v edicích (a na to navázaných rolích). Říci lze ale jedno: Je to serverový operační systém, který implementuje práci s mnoha síťovými protokoly. A který poskytuje (právě pomocí zmíněných rolí) řadu služeb důležitých v počítačových sítích, ať již se jedná o role DNS a DHCP serveru nebo *Active Directory*.
 
-=== Licencování
-
-.Co musíme zohlednit:
+=== Licencování MS Windows Serveru
+==== Co musíme zohlednit?
 
 * Samotnou cenu za licenci MS Windows Serveru
 * Cenu za uživatele (nebo zařízení), kteří se budou k serveru připojovat
 
-.Co je to CAL?
+==== Čím se liší edice MS Windows Serveru?
 
-* Per User
-* Per Device
+. Cenou samotné licence
+. Poskytovanou funkcionalitou (rolemi)
+. Licenčními omezeními
+.. Hardware (viz dále)
+.. Počtem uživatelů a zařízení, pro které jsou funkce serveru poskytovány 
 
-.Co zohlednit při výběru edice MS Windows Serveru?
+==== Co je to CAL?
 
-* Licenční omezení ohledně hardware
-* Poskytované role v rámci edice
+TIP: Zkratka znamená **C**lient **A**ccess **L**icence.
 
-NOTE: Přehledně je to shrnuto v následující tabulce -- TODO.
+.Varianta "Per User":
 
-=== Role serveru
+Pořizujeme množství licencí *pro uživatele*, kteří se budou připojovat k serveru. Lze nakoupit po balíčcích.
 
-=== Active Directory
+.Varianta "Per Client":
+
+Pořizujeme licence *pro zařízení*, která se budou připojovat k danému serveru (opět, lze nakoupit po balíčcích).
+
+TIP: Slovo __client__ je zde použito v konzervativním významu poplatném světu informačních technologií. Vzpoměňte na architekturu *klient-server*. Není to člověk, je to zařízení.
+
+NOTE: *Otázka na tělo:* Co se vyplatí v organizaci používající *100 počítačů* a mající *600 uživatelů* PC? (...) Ano, správně je to CAL typu "Per Client".
+
+==== Co zohlednit při výběru edice MS Windows Serveru?
+
+* Licenční omezení ohledně hardware (primárně operační paměti a počtu socketů serveru) a limitů poskytovaných služeb (například omezení počtu souběžných připojení protokolem SMB).
+
+TIP: Vzpomínáte na protokol SMB aka **S**erver **M**essage **B**lock? Jedná se o protokol, který umožňuje sdílení protředků (tzn. souborů, složek, tiskáren apod.) v sítích používajících MS Windows. Na GNU/Linuxu práci s ním implementuje software Samba.
+
+NOTE: Přehledně je to shrnuto v následující http://www.microsoft.com/en-us/download/details.aspx?id=41703&WT.mc_id=rss_alldownloads_all[tabulce].
+
+* Poskytované role v rámci edice (opět viz výše  zmíněná tabulka)
+
+TIP: Nehledejte v tom složitost. Co role, to poskytovaná funkcionalita v rámci serveru. Mnoho jich znáte, vzpoměňte na různé síťové služby. DHCP, DNS, pošta, webserver, souborový server? Vše jsou role MS Windows Serveru, pod než spadají různé dílčí služby.
+
+=== Active Directory (AD)
+
+Zcela zásadníní role MS Windows Serveru, která vyžaduje souběžnou instalaci role DNS serveru. Implementuje práci s protokolem LDAP a obsahuje katalog objektů v hierarchické struktuře. Objektem může být uživatel, skupina, organizační jednotka, učet počítače apod. AD tak poskytuje v konečném důsledku síťové účty, díky kterým lze realizovat (ve spolupráci s dalšími rolemi) např. cestovní profil.
+
+NOTE: Active Directory je klasickým případem adresářové služby. POZOR! Slovo adresář -- *directory* -- je použit v klasickém významu. Jde o adresář/seznam již zmíněných uživatelů, skupin apod. -- stejně, jako strukturu jejich vzájemných vnoření, hierarchii. *Nijak přímo nesouvisí s pojmem složka*.
+
+=== LDAP (**L**ight **D**irectory **A**ccess **P**rotocol)
+
+Ve stručnosti protokol, se kterým pracuje (a který implementuje) Active Directory. *Ale zdaleka nejen ten*. S LDAP umí pracovat mnoho jiných aplikací, na GNU/Linuxu bude patrně nejznámější OpenLDAP, ale existují i řešení od firmy Novell a dalších.
+
+TIP: Vzpomínáte na pojmy jakou jsou DN (**D**istinguished **N**ame), CN (**C**ommon **N**ame), OU (**O**rganisation **U**nit), DC (**D**omain **C**omponent) a další? Všechny jsou poplatné právě výše zmíněnému protokolu.
 
 == Virtualizace
 
@@ -47,15 +78,21 @@ NOTE: Detailně byla virtualizace, její druhy a využití popsána ve třetím 
 
 == Klíčové pojmy
 
-TODO
+MS Windows Server, edice, role, licence, CAL, per user, per client, Active Directory, LDAP, virtualizace, kontejnerová virtualizace, plná virtualizace, částečná virtualizace, softwarová virtualizace
 
 == Použité zdroje
 
-TODO
+. https://en.wikipedia.org/wiki/Windows_Server
+. http://www.microsoft.com/en-us/download/details.aspx?id=41703&WT.mc_id=rss_alldownloads_all
+. https://www.novell.com/documentation/edir873/?page=/documentation/edir873/edir873/data/h0000007.html
 
 == Kam dál?
 
-TODO
+. Naprosto geniální seriál o AD a LDAP, nenechte se zastrašit spartánským vzhledem:
+* http://www.samuraj-cz.com/clanek/adresarove-sluzby-a-ldap/
+
+. A ještě jeden skvělý, byť opět starší seriál o LDAP:
+* http://www.root.cz/clanky/lehky-uvod-do-ldap/
 
 ---
 
