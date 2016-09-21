@@ -16,7 +16,7 @@ ____
 Windows Server is a brand name for a group of server operating systems released by Microsoft. It includes all Windows operating systems branded "Windows Server", but not any other Microsoft product. The first Windows server edition to be released under that brand was Windows Server 2003.
 ____
 
-IMPORTANT: *Jak tomu rozumět?* Vlastně špatně. Ms Windows Server je řada několika operačních systémů, která se liší v edicích (a na to navázaných rolích). Říci lze ale jedno: Je to severový operační systém, který implementuje práci s mnoha síťovými protokoly. A který poskytuje (právě pomocí zmíněnýc rolí) řadu služeb důležitých v počítačových sítích, ať již se jedná o role DNS a DHCP serveru nebo Active Directory.
+IMPORTANT: *Jak tomu rozumět?* Vlastně špatně. Ms Windows Server je řada několika operačních systémů, která se liší v edicích (a na to navázaných rolích). Říci lze ale jedno: Je to serverový operační systém, který implementuje práci s mnoha síťovými protokoly. A který poskytuje (právě pomocí zmíněnýc rolí) řadu služeb důležitých v počítačových sítích, ať již se jedná o role DNS a DHCP serveru nebo Active Directory.
 
 === Licencování
 
