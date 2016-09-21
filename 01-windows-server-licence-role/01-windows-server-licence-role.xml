@@ -144,24 +144,18 @@
 </chapter>
 <chapter xml:id="_kam_dál">
 <title>Kam dál?</title>
-<orderedlist numeration="arabic">
-<listitem>
-<simpara>Naprosto geniální seriál o AD a LDAP, nenechte se zastrašit spartánským vzhledem:</simpara>
 <itemizedlist>
+<title>Naprosto geniální seriál o AD a LDAP, nenechte se zastrašit spartánským vzhledem:</title>
 <listitem>
 <simpara><link xl:href="http://www.samuraj-cz.com/clanek/adresarove-sluzby-a-ldap/">http://www.samuraj-cz.com/clanek/adresarove-sluzby-a-ldap/</link></simpara>
 </listitem>
 </itemizedlist>
-</listitem>
-<listitem>
-<simpara>A ještě jeden skvělý, byť opět starší seriál o LDAP:</simpara>
 <itemizedlist>
+<title>A ještě jeden skvělý, byť opět starší seriál o LDAP:</title>
 <listitem>
 <simpara><link xl:href="http://www.root.cz/clanky/lehky-uvod-do-ldap/">http://www.root.cz/clanky/lehky-uvod-do-ldap/</link></simpara>
 </listitem>
 </itemizedlist>
-</listitem>
-</orderedlist>
 <simpara><?asciidoc-hr?></simpara>
 <itemizedlist>
 <listitem>

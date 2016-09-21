@@ -88,10 +88,10 @@ MS Windows Server, edice, role, licence, CAL, per user, per client, Active Direc
 
 == Kam dál?
 
-. Naprosto geniální seriál o AD a LDAP, nenechte se zastrašit spartánským vzhledem:
+.Naprosto geniální seriál o AD a LDAP, nenechte se zastrašit spartánským vzhledem:
 * http://www.samuraj-cz.com/clanek/adresarove-sluzby-a-ldap/
 
-. A ještě jeden skvělý, byť opět starší seriál o LDAP:
+.A ještě jeden skvělý, byť opět starší seriál o LDAP:
 * http://www.root.cz/clanky/lehky-uvod-do-ldap/
 
 ---
