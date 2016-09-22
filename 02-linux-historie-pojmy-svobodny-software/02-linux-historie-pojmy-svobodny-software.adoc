@@ -45,6 +45,8 @@ TIP: Označujeme ho proto jako svobodný software / Open source.
 
 === Další licence
 
+== Adresářová struktura
+
 == Linuxové distribuce
 === Co je to linuxová distribuce?
 
