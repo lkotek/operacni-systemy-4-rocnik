@@ -6,13 +6,59 @@
 
 (C) Lukáš Kotek, link:https://creativecommons.org/licenses/by-sa/4.0/[CC-BY-SA 4.0]
 
-NOTE: Tento dokument je *NEHOTOVÁ* prázdná šablona. Materiály budou v rámci roku průběžně doplňovány.
-
 <<<
+
+== GNU/Linux
+=== Definice
+
+[quote, 'https://www.debian.org/releases/wheezy/amd64/ch01s02.html.en[Zdroj: www.debian.org]']
+____
+Linux is an operating system: a series of programs that let you interact with your computer and run other programs. (...) In a GNU/Linux system, Linux is the kernel component. The rest of the system consists of other programs, many of which were written by or for the GNU Project. Because the Linux kernel alone does not form a working operating system, we prefer to use the term "GNU/Linux" to refer to systems that many people casually refer to as "Linux".
+____
+
+== Základní vlastnosti
+
+* Operační systém unixového typu
+
+NOTE: Čerpá z filosofie původního Unixu, ale je od základů založen na nových zdrojových kódech.
+
+* Volně šiřitelný a upravitelný díky licenci GNU GPL
+
+TIP: Označujeme ho proto jako svobodný software / Open source.
+
+* Víceuživatelský a víceúlohový operační systém
+* Monolitické (ale modulární) jádro 
+* Hierarchická adresářová struktura
+* Souborový systém např. ext4, xfs, btrfs
+
+== Historie
+=== Co je to Unix?
+
+=== Richard Stallman a projekt GNU
+
+=== Linus Torvalds a "Freaks"
+
+== Svobodný software
+=== Svobodný software a Open source
+
+=== Licence GNU GPL
+
+=== Další licence
+
+== Linuxové distribuce
+=== Co je to linuxová distribuce?
+
+=== Vývojový model v rámci Open source
+
+TIP: Esej bazar a katedrála.
+
+=== Komerční modely
+
+=== Příklady linuxových distribucí
 
 == Klíčové pojmy
 
-TODO
+gnu, gnu gpl, linux, unix, distribuce, svobodný software, open source, Linux Torvalds, Richard Stallman, komerční podpora, ext4 
 
 == Použité zdroje
 
@@ -20,9 +66,10 @@ TODO
 
 == Kam dál?
 
-TODO
+.Podprobné rozepsání důvodu použití spojení GNU/Linux:
+* https://www.gnu.org/gnu/why-gnu-linux.cs.html
 
 ---
 
-- Přehled kapitol: [link:../README.html[html]] [link:../README.md[asciidoc]]
+- Přehled kapitol: [link:../README.html[html]] [link:../README.pdf[pdf]] [link:../README.asciidoc[asciidoc]]
 
