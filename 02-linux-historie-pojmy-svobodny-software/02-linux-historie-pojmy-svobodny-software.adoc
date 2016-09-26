@@ -27,19 +27,47 @@ NOTE: Čerpá z filosofie původního Unixu, ale je od základů založen na nov
 TIP: Označujeme ho proto jako svobodný software / Open source.
 
 * Víceuživatelský a víceúlohový operační systém
-* Monolitické (ale modulární) jádro 
-* Hierarchická adresářová struktura
-* Souborový systém např. ext4, xfs, btrfs
+* Monolitické (ale modulární) jádro
+* Souborovým systémem je např. ext4, xfs, btrfs 
+* Hierarchická adresářová struktura                                                                
 
-== Historie
-=== Co je to Unix?
+== Historie 
+=== Co je vlastně Unix?
+
+.Problém lze uchopit dvěma způsoby:
+
+. je to historický operační systém původem z přelomu 60. a 70. let;
+. jedná se o ochranou známku (aktuálně organizace The Open Group).
+
+Přitom oba pohledy jsou korektní. Unix (zcela korektně psáno UNIX a naopak historicky UNICS) byl operační systém na svou dobu velmi pokrokový. Zejména díky tomu, že byl víceuživatelský a byl přenositelný mezi různými počítači (ve smyslu zkompilovatelný pro ně), čemuž vděčil za to, že byl z podstatné části napsán v jazyce C.
+
+NOTE: Hlavními autory UNIXu (vedoucími vývoje) jsou *Ken Thompson* a *Dennis Ritchie*.
+
+Existuje mnoho různých systémů, které jsou více či méně přímými pokračovateli Unixu (tak, že i z větší či menší části staví na jeho zdrojových kódech). Za všechny lze zmínit FreeBSD a OpenBSD, Solaris, IBM AIX a dokonce macOS. Lze usilovat o certifikaci operačního systému jakožto Unixu (tzn., že systém odpovídá jeho specifikaci).
+
+TIP: Například už zmíněný macOS (dříve Mac OS X) je certifikovaným UNIXem od http://www.opengroup.org/openbrand/register/brand3555.htm[verze 10.5].
 
 === Richard Stallman a projekt GNU
 
+.Projekt GNU je pro nás důležitý dvěma zásadními výstupy:
+
+. vytvořením obrovské sady utilit pro předpokládaný unixový operační systém;
+. vytvořením sady licencí pro tzv. "svobodný software" (viz dále) včetně GNU GPL.
+
+TIP: GNU znamená GNU is not UNIX. Čistě pro zajímavost -- jedná se o rekurzivní akronym.
+
 === Linus Torvalds a "Freaks"
 
-== Svobodný software
-=== Svobodný software a Open source
+== Svobodný software a Open source
+=== Svobodný software
+
+Aneb co dělá svobodný (= free) software svobodným? Svoboda je uvažována ve smyslu práv uživatele nějakým způsobem s tímto softwarem nakládat. Svobodným ve smyslu, co nejvolnějším, ale stále při zachování stejných práv ostatním uživatelům. Častý omyl je chápání slova _free_ ve smyslu _zadarmo_. Svobodný software nicméně může být v určitých situacích dokonce i placený (např. jeho distribuce směrem k uživateli), jakkoliv je to spíše vzácné. 
+
+TIP: Richard Stallman to vyjadřuje https://www.gnu.org/philosophy/free-sw.html[výstižně]: "Abyste správně porozuměli podstatě věci, měli byste chápat slovo free ve spojení free speech (svobodný projev), nikoliv jako free beer (pivo zadarmo)."
+
+=== Open source
+
+TIP: Vývojový model v rámci Open source krásně popsal Eric S. Raymond v eseji http://www.root.cz/knihy/katedrala-a-trziste/[Katedrála a tržiště].
 
 === Licence GNU GPL
 
@@ -47,12 +75,24 @@ TIP: Označujeme ho proto jako svobodný software / Open source.
 
 == Adresářová struktura
 
+Už padlo, že je hierarchická. Ale co to znamená?
+
+TIP: Níže můžete vidět vybrané adresáře a soubory *pro ilustraci* principu.
+
+                             /   <---------------------------------------- Kořenový adresář 
+                             |
+  ---------------------------|---------------------------------
+  |    |     |    |    |     |     |    |    |     |     |    |
+ bin  boot  dev  etc  home  lib   mnt  opt  proc  root  usr  var   <------ Vnořené adresáře   
+  |               |                          |           |
+ bash         ----|----                   cpuinfo    ----|----        
+              |       |                              |       |
+            passwd  httpd                         include  share   
+                      |                              |             
+                  httpd.conf                      stdio.h  
+
 == Linuxové distribuce
 === Co je to linuxová distribuce?
-
-=== Vývojový model v rámci Open source
-
-TIP: Esej bazar a katedrála.
 
 === Komerční modely
 

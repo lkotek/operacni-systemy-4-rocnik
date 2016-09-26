@@ -590,10 +590,10 @@ Označujeme ho proto jako svobodný software / Open source.
 <p>Monolitické (ale modulární) jádro</p>
 </li>
 <li>
-<p>Hierarchická adresářová struktura</p>
+<p>Souborovým systémem je např. ext4, xfs, btrfs</p>
 </li>
 <li>
-<p>Souborový systém např. ext4, xfs, btrfs</p>
+<p>Hierarchická adresářová struktura</p>
 </li>
 </ul>
 </div>
@@ -603,12 +603,74 @@ Označujeme ho proto jako svobodný software / Open source.
 <h2 id="_historie">Historie</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_co_je_to_unix">Co je to Unix?</h3>
-
+<h3 id="_co_je_vlastně_unix">Co je vlastně Unix?</h3>
+<div class="olist arabic">
+<div class="title">Problém lze uchopit dvěma způsoby:</div>
+<ol class="arabic">
+<li>
+<p>je to historický operační systém původem z přelomu 60. a 70. let;</p>
+</li>
+<li>
+<p>jedná se o ochranou známku (aktuálně organizace The Open Group).</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Přitom oba pohledy jsou korektní. Unix (zcela korektně psáno UNIX a naopak historicky UNICS) byl operační systém na svou dobu velmi pokrokový. Zejména díky tomu, že byl víceuživatelský a byl přenositelný mezi různými počítači (ve smyslu zkompilovatelný pro ně), čemuž vděčil za to, že byl z podstatné části napsán v jazyce C.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Hlavními autory UNIXu (vedoucími vývoje) jsou <strong>Ken Thompson</strong> a <strong>Dennis Ritchie</strong>.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Existuje mnoho různých systémů, které jsou více či méně přímými pokračovateli Unixu (tak, že i z větší či menší části staví na jeho zdrojových kódech). Za všechny lze zmínit FreeBSD a OpenBSD, Solaris, IBM AIX a dokonce macOS. Lze usilovat o certifikaci operačního systému jakožto Unixu (tzn., že systém odpovídá jeho specifikaci).</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+Například už zmíněný macOS (dříve Mac OS X) je certifikovaným UNIXem od <a href="http://www.opengroup.org/openbrand/register/brand3555.htm">verze 10.5</a>.
+</td>
+</tr>
+</table>
+</div>
 </div>
 <div class="sect2">
 <h3 id="_richard_stallman_a_projekt_gnu">Richard Stallman a projekt GNU</h3>
-
+<div class="olist arabic">
+<div class="title">Projekt GNU je pro nás důležitý dvěma zásadními výstupy:</div>
+<ol class="arabic">
+<li>
+<p>vytvořením obrovské sady utilit pro předpokládaný unixový operační systém;</p>
+</li>
+<li>
+<p>vytvořením sady licencí pro tzv. "svobodný software" (viz dále) včetně GNU GPL.</p>
+</li>
+</ol>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+GNU znamená GNU is not UNIX. Čistě pro zajímavost&#8201;&#8212;&#8201;jedná se o rekurzivní akronym.
+</td>
+</tr>
+</table>
+</div>
 </div>
 <div class="sect2">
 <h3 id="_linus_torvalds_a_freaks">Linus Torvalds a "Freaks"</h3>
@@ -617,11 +679,40 @@ Označujeme ho proto jako svobodný software / Open source.
 </div>
 </div>
 <div class="sect1">
-<h2 id="_svobodný_software">Svobodný software</h2>
+<h2 id="_svobodný_software_a_open_source">Svobodný software a Open source</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_svobodný_software_a_open_source">Svobodný software a Open source</h3>
-
+<h3 id="_svobodný_software">Svobodný software</h3>
+<div class="paragraph">
+<p>Aneb co dělá svobodný (= free) software svobodným? Svoboda je uvažována ve smyslu práv uživatele nějakým způsobem s tímto softwarem nakládat. Svobodným ve smyslu, co nejvolnějším, ale stále při zachování stejných práv ostatním uživatelům. Častý omyl je chápání slova <em>free</em> ve smyslu <em>zadarmo</em>. Svobodný software nicméně může být v určitých situacích dokonce i placený (např. jeho distribuce směrem k uživateli), jakkoliv je to spíše vzácné.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+Richard Stallman to vyjadřuje <a href="https://www.gnu.org/philosophy/free-sw.html">výstižně</a>: "Abyste správně porozuměli podstatě věci, měli byste chápat slovo free ve spojení free speech (svobodný projev), nikoliv jako free beer (pivo zadarmo)."
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_open_source">Open source</h3>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+Vývojový model v rámci Open source krásně popsal Eric S. Raymond v eseji <a href="http://www.root.cz/knihy/katedrala-a-trziste/">Katedrála a tržiště</a>.
+</td>
+</tr>
+</table>
+</div>
 </div>
 <div class="sect2">
 <h3 id="_licence_gnu_gpl">Licence GNU GPL</h3>
@@ -634,14 +725,11 @@ Označujeme ho proto jako svobodný software / Open source.
 </div>
 </div>
 <div class="sect1">
-<h2 id="_linuxové_distribuce">Linuxové distribuce</h2>
+<h2 id="_adresářová_struktura">Adresářová struktura</h2>
 <div class="sectionbody">
-<div class="sect2">
-<h3 id="_co_je_to_linuxová_distribuce">Co je to linuxová distribuce?</h3>
-
+<div class="paragraph">
+<p>Už padlo, že je hierarchická. Ale co to znamená?</p>
 </div>
-<div class="sect2">
-<h3 id="_vývojový_model_v_rámci_open_source">Vývojový model v rámci Open source</h3>
 <div class="admonitionblock tip">
 <table>
 <tr>
@@ -649,11 +737,34 @@ Označujeme ho proto jako svobodný software / Open source.
 <i class="fa icon-tip" title="Tip"></i>
 </td>
 <td class="content">
-Esej bazar a katedrála.
+Níže můžete vidět vybrané adresáře a soubory <strong>pro ilustraci</strong> principu.
 </td>
 </tr>
 </table>
 </div>
+<div class="literalblock">
+<div class="content">
+<pre>                            /   &lt;---------------------------------------- Kořenový adresář
+                            |
+ ---------------------------|---------------------------------
+ |    |     |    |    |     |     |    |    |     |     |    |
+bin  boot  dev  etc  home  lib   mnt  opt  proc  root  usr  var   &lt;------ Vnořené adresáře
+ |               |                          |           |
+bash         ----|----                   cpuinfo    ----|----
+             |       |                              |       |
+           passwd  httpd                         include  share
+                     |                              |
+                 httpd.conf                      stdio.h</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_linuxové_distribuce">Linuxové distribuce</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_co_je_to_linuxová_distribuce">Co je to linuxová distribuce?</h3>
+
 </div>
 <div class="sect2">
 <h3 id="_komerční_modely">Komerční modely</h3>
@@ -705,7 +816,7 @@ Esej bazar a katedrála.
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2016-09-22 08:53:07 St°ednÝ Evropa (letnÝ Ŕas)
+Last updated 2016-09-26 15:23:36 St°ednÝ Evropa (letnÝ Ŕas)
 </div>
 </div>
 </body>
