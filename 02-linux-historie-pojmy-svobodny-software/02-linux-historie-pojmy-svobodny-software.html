@@ -509,7 +509,7 @@ table.CodeRay td.code>pre{padding:0}
 .CodeRay .head .head{color:#f4f}
 </style>
 </head>
-<body class="article">
+<body class="book">
 <div id="header">
 <h1>GNU/Linux&#8201;&#8212;&#8201;historie, pojmy a svobodný software</h1>
 </div>
@@ -608,15 +608,15 @@ Označujeme ho proto jako svobodný software / Open source.
 <div class="title">Problém lze uchopit dvěma způsoby:</div>
 <ol class="arabic">
 <li>
-<p>je to historický operační systém původem z přelomu 60. a 70. let;</p>
+<p>je to historický <strong>operační systém</strong> původem z přelomu 60. a 70. let;</p>
 </li>
 <li>
-<p>jedná se o ochranou známku (aktuálně organizace The Open Group).</p>
+<p>jedná se o <strong>ochranou známku</strong> (aktuálně organizace The Open Group).</p>
 </li>
 </ol>
 </div>
 <div class="paragraph">
-<p>Přitom oba pohledy jsou korektní. Unix (zcela korektně psáno UNIX a naopak historicky UNICS) byl operační systém na svou dobu velmi pokrokový. Zejména díky tomu, že byl víceuživatelský a byl přenositelný mezi různými počítači (ve smyslu zkompilovatelný pro ně), čemuž vděčil za to, že byl z podstatné části napsán v jazyce C.</p>
+<p>Přitom oba pohledy jsou korektní. Unix (zcela korektně psáno UNIX a naopak historicky UNICS) byl operační systém na svou dobu velmi pokrokový. Zejména díky tomu, že byl víceuživatelský a byl přenositelný mezi různými počítači (ve smyslu zkompilovatelný pro ně), čemuž vděčil za to, že byl z podstatné části <strong>napsán v jazyce C</strong>.</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -625,13 +625,19 @@ Označujeme ho proto jako svobodný software / Open source.
 <i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
-Hlavními autory UNIXu (vedoucími vývoje) jsou <strong>Ken Thompson</strong> a <strong>Dennis Ritchie</strong>.
+Hlavními autory UNIXu (vedoucími vývoje) byli <strong>Ken Thompson</strong> a <strong>Dennis Ritchie</strong>.
 </td>
 </tr>
 </table>
 </div>
+<div class="imageblock">
+<div class="content">
+<a class="image" href="https://en.wikipedia.org/wiki/File:Ken_n_dennis.jpg"><img src="thompson-ritchie.jpg" alt="thompson ritchie"></a>
+</div>
+<div class="title">Obrázek 1: Ken Thompson a Dennis Ritchie, licence: public domain</div>
+</div>
 <div class="paragraph">
-<p>Existuje mnoho různých systémů, které jsou více či méně přímými pokračovateli Unixu (tak, že i z větší či menší části staví na jeho zdrojových kódech). Za všechny lze zmínit FreeBSD a OpenBSD, Solaris, IBM AIX a dokonce macOS. Lze usilovat o certifikaci operačního systému jakožto Unixu (tzn., že systém odpovídá jeho specifikaci).</p>
+<p>Existuje mnoho různých systémů, které jsou více či méně <strong>přímými pokračovateli Unixu</strong> (tak, že i z větší či menší části staví na jeho zdrojových kódech). Za všechny lze zmínit FreeBSD a OpenBSD, Solaris, IBM AIX a dokonce macOS. Lze usilovat o certifikaci operačního systému jakožto Unixu (tzn., že systém odpovídá jeho specifikaci).</p>
 </div>
 <div class="admonitionblock tip">
 <table>
@@ -640,7 +646,7 @@ Hlavními autory UNIXu (vedoucími vývoje) jsou <strong>Ken Thompson</strong> a
 <i class="fa icon-tip" title="Tip"></i>
 </td>
 <td class="content">
-Například už zmíněný macOS (dříve Mac OS X) je certifikovaným UNIXem od <a href="http://www.opengroup.org/openbrand/register/brand3555.htm">verze 10.5</a>.
+Například už zmíněný macOS (dříve Mac OS X) je <strong>certifikovaným UNIXem</strong> od <a href="http://www.opengroup.org/openbrand/register/brand3555.htm">verze 10.5</a>.
 </td>
 </tr>
 </table>
@@ -652,12 +658,15 @@ Například už zmíněný macOS (dříve Mac OS X) je certifikovaným UNIXem od
 <div class="title">Projekt GNU je pro nás důležitý dvěma zásadními výstupy:</div>
 <ol class="arabic">
 <li>
-<p>vytvořením obrovské sady utilit pro předpokládaný unixový operační systém;</p>
+<p>vytvořením obrovské <strong>sady utilit</strong> pro předpokládaný unixový operační systém;</p>
 </li>
 <li>
-<p>vytvořením sady licencí pro tzv. "svobodný software" (viz dále) včetně GNU GPL.</p>
+<p>vytvořením <strong>sady licencí</strong> pro tzv. "svobodný software" (viz dále) včetně GNU GPL.</p>
 </li>
 </ol>
+</div>
+<div class="paragraph">
+<p>Původní snahou projektu bylo vyvinou zcela nový, <strong>na nových zdrojových kódech postavený</strong> (ale filosofii UNIXu ctící) operační systém, který by byl tzv. svobodný (viz níže). Byl to ambiciózní projekt a bohužel se mu nepodařilo vyvinou hlavní komponentu systému&#8201;&#8212;&#8201;jádro.</p>
 </div>
 <div class="admonitionblock tip">
 <table>
@@ -674,7 +683,21 @@ GNU znamená GNU is not UNIX. Čistě pro zajímavost&#8201;&#8212;&#8201;jedná
 </div>
 <div class="sect2">
 <h3 id="_linus_torvalds_a_freaks">Linus Torvalds a "Freaks"</h3>
-
+<div class="paragraph">
+<p>Můžeme být rádi, že původní název pro operační systém vyvíjený Linusem Torvaldsem neujal. A o co tomuto finskému studentovi vlastně na přelomu 80. a 90. let šlo? Snažil se vyvinout operační systém pro počítače používající <strong>procesory Intel 386</strong>. Jak se sám <a href="https://en.wikipedia.org/wiki/History_of_Linux">vyjádřil</a>: "I&#8217;m doing a (free) operating system (just a hobby, won&#8217;t be big and professional like gnu) for 386(486) AT clones." Projekt se stal i díky otevřenému vývojovému modelu velmi populárním a další dění už je historie.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+Nakonec právě výstupy projektu GNU, který ve výroku zmiňuje, byly pro úspěch projektu zásadní, neboť je mohl zkombinovat se svou prací (tedy jádrem operačního systému), bez nutnosti vyvíjet vše úplně od začátku. Proto se ostatně setkáváme s pojmem <strong>GNU/Linux</strong>.
+</td>
+</tr>
+</table>
+</div>
 </div>
 </div>
 </div>
@@ -684,7 +707,7 @@ GNU znamená GNU is not UNIX. Čistě pro zajímavost&#8201;&#8212;&#8201;jedná
 <div class="sect2">
 <h3 id="_svobodný_software">Svobodný software</h3>
 <div class="paragraph">
-<p>Aneb co dělá svobodný (= free) software svobodným? Svoboda je uvažována ve smyslu práv uživatele nějakým způsobem s tímto softwarem nakládat. Svobodným ve smyslu, co nejvolnějším, ale stále při zachování stejných práv ostatním uživatelům. Častý omyl je chápání slova <em>free</em> ve smyslu <em>zadarmo</em>. Svobodný software nicméně může být v určitých situacích dokonce i placený (např. jeho distribuce směrem k uživateli), jakkoliv je to spíše vzácné.</p>
+<p>Aneb co dělá svobodný (= free) software svobodným? Svoboda je uvažována ve smyslu práv uživatele nějakým způsobem s tímto softwarem nakládat. Svobodným ve smyslu, co nejvolnějším, ale stále při zachování stejných práv ostatním uživatelům. Častý omyl je chápání slova <em>free</em> ve smyslu <em>zadarmo</em>. Svobodný software nicméně <strong>může být v určitých situacích dokonce i placený</strong> (např. jeho distribuce směrem k uživateli), jakkoliv je to spíše vzácné.</p>
 </div>
 <div class="admonitionblock tip">
 <table>
@@ -701,6 +724,9 @@ Richard Stallman to vyjadřuje <a href="https://www.gnu.org/philosophy/free-sw.h
 </div>
 <div class="sect2">
 <h3 id="_open_source">Open source</h3>
+<div class="paragraph">
+<p>Open source řeší obdobnou problematiku jako svobodný software, ale dívá se na ni <strong>jinou optikou</strong>. Jako hlavní výhodu vnímá otevřený vývoj ve stylu "kdokoliv může přispět" a "kdokoliv může odhalit a opravit chybu" (velmi zjednodušeně řečeno). Přes veškerou dramatickou rétoriku platí, že prakticky všechny nejvýznamnější Open source licence jsou zároveň i Free software licencemi a naopak :-)</p>
+</div>
 <div class="admonitionblock tip">
 <table>
 <tr>
@@ -716,11 +742,47 @@ Vývojový model v rámci Open source krásně popsal Eric S. Raymond v eseji <a
 </div>
 <div class="sect2">
 <h3 id="_licence_gnu_gpl">Licence GNU GPL</h3>
-
+<div class="olist arabic">
+<div class="title">Z licence vyplývá několik <a href="https://www.gnu.org/philosophy/free-sw.cs.html">základních principů</a> svobodného software:</div>
+<ol class="arabic">
+<li>
+<p>Svoboda <strong>spustit program</strong> za jakýmkoliv účelem (svoboda 0).</p>
+</li>
+<li>
+<p>Svoboda <strong>studovat, jak program pracuje</strong> a přizpůsobit ho svým potřebám (svoboda 1). Předpokladem k výše uvedenému je přístup ke zdrojovému kódu.</p>
+</li>
+<li>
+<p>Svoboda <strong>redistribuovat kopie</strong>, abyste pomohli vašemu kolegovi (svoboda 2).</p>
+</li>
+<li>
+<p>Svoboda vylepšovat program a zveřejňovat zlepšení, aby z nich mohla mít prospěch celá komunita. (svoboda 3). Předpokladem k výše uvedenému je <strong>přístup ke zdrojovému kódu</strong>.</p>
+</li>
+</ol>
 </div>
-<div class="sect2">
-<h3 id="_další_licence">Další licence</h3>
-
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Zajímavý princip GNU GPL je, že nikdo <strong>nemůže zdrojový kód pod ní šířený uzavřít</strong>. Dokonce i vy, chcete-li svůj projekt obohatit o kód pod GNU GPL, musíte výsledné dílo zveřejnit opět zase pod GNU GPL.
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+Další licence? Můžeme se podívat třeba na MIT, či BSD licence (tzv. permisivní licence), nebo na plejádu <strong>Creative Commons</strong> licencí, které se na problematiku svobodných děl dívají (a hodí se pro) ještě z jiného úhlu pohledu než právě GNU GPL. (Tu označujeme jako copyleftovou.)
+</td>
+</tr>
+</table>
+</div>
 </div>
 </div>
 </div>
@@ -728,7 +790,7 @@ Vývojový model v rámci Open source krásně popsal Eric S. Raymond v eseji <a
 <h2 id="_adresářová_struktura">Adresářová struktura</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Už padlo, že je hierarchická. Ale co to znamená?</p>
+<p>Už padlo, že je <strong>hierarchická</strong>. Ale co to znamená?</p>
 </div>
 <div class="admonitionblock tip">
 <table>
@@ -764,15 +826,33 @@ bash         ----|----                   cpuinfo    ----|----
 <div class="sectionbody">
 <div class="sect2">
 <h3 id="_co_je_to_linuxová_distribuce">Co je to linuxová distribuce?</h3>
-
+<div class="paragraph">
+<p>Linuxová distribuce je <strong>ucelený operační systém</strong> tak, jak je poskytován uživatelům. Neexistuje "ten jeden" operační systém Linux (schválně zkuste dohledat), ale mnoho tzv. distribucí, které kombinují Linux (nyní myšleno jako jádro), sadu základních utilit (např. zrovna těch od GNU), aplikačního software, určitý balíčkovací systém, grafické prostředí a mnoho dalšího. Podle toho, jak je která distribuce "poskládána", tak můžeme řešit její vhodnost pro určité nasazení.</p>
 </div>
-<div class="sect2">
-<h3 id="_komerční_modely">Komerční modely</h3>
-
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<strong>Příklady linuxových distribucí?</strong> Z nejvýznamnějších lze zmínit např. Debian, Ubuntu, Fedoru či OpenSUSE. A pokud by nás zajímaly distribuce využívající nějaký komerční model, jistě můžeme zmínit Red Hat Enterprise Linux (RHEL) nebo SUSE Linux Enterprise Desktop (SLES).
+</td>
+</tr>
+</table>
 </div>
-<div class="sect2">
-<h3 id="_příklady_linuxových_distribucí">Příklady linuxových distribucí</h3>
-
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<strong>Komerční modely</strong>, komerční distribuce&#8230;&#8203;? Lze to vůbec? Jistě lze, je možné vydělávat na aktivitách okolo Linuxu jako takového, ať už se jedná o <strong>poskytování podpory</strong> (asi nejvýznamnější oblast), nebo oblast školení a certifikací. Mnoho firem rovněž používá Linux jako základ pro své podnikání a přímo platí vývojáře, kteří se na jeho vývoji podílejí.
+</td>
+</tr>
+</table>
+</div>
 </div>
 </div>
 </div>
@@ -780,15 +860,34 @@ bash         ----|----                   cpuinfo    ----|----
 <h2 id="_klíčové_pojmy">Klíčové pojmy</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>gnu, gnu gpl, linux, unix, distribuce, svobodný software, open source, Linux Torvalds, Richard Stallman, komerční podpora, ext4</p>
+<p>gnu, gnu gpl, linux, unix, distribuce, svobodný software, open source, Linux Torvalds, Richard Stallman, komerční podpora, ext4, kořenový adresář, hierarchická struktura</p>
 </div>
 </div>
 </div>
 <div class="sect1">
 <h2 id="_použité_zdroje">Použité zdroje</h2>
 <div class="sectionbody">
-<div class="paragraph">
-<p>TODO</p>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><a href="https://www.debian.org/releases/wheezy/amd64/ch01s02.html.en" class="bare">https://www.debian.org/releases/wheezy/amd64/ch01s02.html.en</a></p>
+</li>
+<li>
+<p><a href="https://www.gnu.org/philosophy/free-sw.cs.html" class="bare">https://www.gnu.org/philosophy/free-sw.cs.html</a></p>
+</li>
+<li>
+<p><a href="https://www.gnu.org/philosophy/free-sw.html" class="bare">https://www.gnu.org/philosophy/free-sw.html</a></p>
+</li>
+<li>
+<p><a href="http://www.opengroup.org/" class="bare">http://www.opengroup.org/</a></p>
+</li>
+<li>
+<p><a href="https://en.wikipedia.org/wiki/History_of_Linux" class="bare">https://en.wikipedia.org/wiki/History_of_Linux</a></p>
+</li>
+<li>
+<p><a href="https://cs.wikipedia.org/wiki/Unix" class="bare">https://cs.wikipedia.org/wiki/Unix</a></p>
+</li>
+</ol>
 </div>
 </div>
 </div>
@@ -796,10 +895,26 @@ bash         ----|----                   cpuinfo    ----|----
 <h2 id="_kam_dál">Kam dál?</h2>
 <div class="sectionbody">
 <div class="ulist">
-<div class="title">Podprobné rozepsání důvodu použití spojení GNU/Linux:</div>
+<div class="title">Podrobné rozepsání důvodu použití spojení GNU/Linux:</div>
 <ul>
 <li>
 <p><a href="https://www.gnu.org/gnu/why-gnu-linux.cs.html" class="bare">https://www.gnu.org/gnu/why-gnu-linux.cs.html</a></p>
+</li>
+</ul>
+</div>
+<div class="ulist">
+<div class="title">Free Software Foundation (schvaluje licence svobodného software):</div>
+<ul>
+<li>
+<p><a href="http://www.fsf.org/" class="bare">http://www.fsf.org/</a></p>
+</li>
+</ul>
+</div>
+<div class="ulist">
+<div class="title">Open Source Initiative (schvaluje licence Open source):</div>
+<ul>
+<li>
+<p><a href="https://opensource.org/" class="bare">https://opensource.org/</a></p>
 </li>
 </ul>
 </div>
@@ -816,7 +931,7 @@ bash         ----|----                   cpuinfo    ----|----
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2016-09-26 15:23:36 St°ednÝ Evropa (letnÝ Ŕas)
+Last updated 2016-10-02 22:06:09 CEST
 </div>
 </div>
 </body>

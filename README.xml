@@ -4,7 +4,7 @@
 <book xmlns="http://docbook.org/ns/docbook" xmlns:xl="http://www.w3.org/1999/xlink" version="5.0" xml:lang="en">
 <info>
 <title>Operační systémy&#8201;&#8212;&#8201;servery (OSC)</title>
-<date>2016-09-19</date>
+<date>2016-09-25</date>
 </info>
 <preface>
 <title></title>
@@ -19,6 +19,9 @@
 <orderedlist numeration="arabic">
 <listitem>
 <simpara>MS Windows Server — licence a role; Virtualizace [<link xl:href="01-windows-server-licence-role/01-windows-server-licence-role.html">html</link>] [<link xl:href="01-windows-server-licence-role/01-windows-server-licence-role.pdf">pdf</link>] [<link xl:href="01-windows-server-licence-role/01-windows-server-licence-role.adoc">asciidoc</link>]</simpara>
+</listitem>
+<listitem>
+<simpara>GNU/Linux&#8201;&#8212;&#8201;historie, pojmy a svobodný software [<link xl:href="02-linux-historie-pojmy-svobodny-software/02-linux-historie-pojmy-svobodny-software.html">html</link>] [<link xl:href="02-linux-historie-pojmy-svobodny-software/02-linux-historie-pojmy-svobodny-software.pdf">pdf</link>] [<link xl:href="02-linux-historie-pojmy-svobodny-software/02-linux-historie-pojmy-svobodny-software.adoc">asciidoc</link>]</simpara>
 </listitem>
 <listitem>
 <simpara>TO DO :-)</simpara>

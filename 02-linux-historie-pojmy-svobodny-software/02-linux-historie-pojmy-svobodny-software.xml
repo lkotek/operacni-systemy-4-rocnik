@@ -4,31 +4,236 @@
 <book xmlns="http://docbook.org/ns/docbook" xmlns:xl="http://www.w3.org/1999/xlink" version="5.0" xml:lang="en">
 <info>
 <title>GNU/Linux&#8201;&#8212;&#8201;historie, pojmy a svobodný software</title>
-<date>2016-09-19</date>
+<date>2016-10-02</date>
 </info>
 <preface>
 <title></title>
 <simpara>&#169; Lukáš Kotek, <link xl:href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA 4.0</link></simpara>
-<note>
-<simpara>Tento dokument je <emphasis role="strong">NEHOTOVÁ</emphasis> prázdná šablona. Materiály budou v rámci roku průběžně doplňovány.</simpara>
-</note>
 <simpara><?asciidoc-pagebreak?></simpara>
 </preface>
+<chapter xml:id="_gnu_linux">
+<title>GNU/Linux</title>
+<section xml:id="_definice">
+<title>Definice</title>
+<blockquote>
+<attribution>
+<link xl:href="https://www.debian.org/releases/wheezy/amd64/ch01s02.html.en">Zdroj: www.debian.org</link>
+</attribution>
+<simpara>Linux is an operating system: a series of programs that let you interact with your computer and run other programs. (&#8230;&#8203;) In a GNU/Linux system, Linux is the kernel component. The rest of the system consists of other programs, many of which were written by or for the GNU Project. Because the Linux kernel alone does not form a working operating system, we prefer to use the term "GNU/Linux" to refer to systems that many people casually refer to as "Linux".</simpara>
+</blockquote>
+</section>
+</chapter>
+<chapter xml:id="_základní_vlastnosti">
+<title>Základní vlastnosti</title>
+<itemizedlist>
+<listitem>
+<simpara>Operační systém unixového typu</simpara>
+</listitem>
+</itemizedlist>
+<note>
+<simpara>Čerpá z filosofie původního Unixu, ale je od základů založen na nových zdrojových kódech.</simpara>
+</note>
+<itemizedlist>
+<listitem>
+<simpara>Volně šiřitelný a upravitelný díky licenci GNU GPL</simpara>
+</listitem>
+</itemizedlist>
+<tip>
+<simpara>Označujeme ho proto jako svobodný software / Open source.</simpara>
+</tip>
+<itemizedlist>
+<listitem>
+<simpara>Víceuživatelský a víceúlohový operační systém</simpara>
+</listitem>
+<listitem>
+<simpara>Monolitické (ale modulární) jádro</simpara>
+</listitem>
+<listitem>
+<simpara>Souborovým systémem je např. ext4, xfs, btrfs</simpara>
+</listitem>
+<listitem>
+<simpara>Hierarchická adresářová struktura</simpara>
+</listitem>
+</itemizedlist>
+</chapter>
+<chapter xml:id="_historie">
+<title>Historie</title>
+<section xml:id="_co_je_vlastně_unix">
+<title>Co je vlastně Unix?</title>
+<orderedlist numeration="arabic">
+<title>Problém lze uchopit dvěma způsoby:</title>
+<listitem>
+<simpara>je to historický <emphasis role="strong">operační systém</emphasis> původem z přelomu 60. a 70. let;</simpara>
+</listitem>
+<listitem>
+<simpara>jedná se o <emphasis role="strong">ochranou známku</emphasis> (aktuálně organizace The Open Group).</simpara>
+</listitem>
+</orderedlist>
+<simpara>Přitom oba pohledy jsou korektní. Unix (zcela korektně psáno UNIX a naopak historicky UNICS) byl operační systém na svou dobu velmi pokrokový. Zejména díky tomu, že byl víceuživatelský a byl přenositelný mezi různými počítači (ve smyslu zkompilovatelný pro ně), čemuž vděčil za to, že byl z podstatné části <emphasis role="strong">napsán v jazyce C</emphasis>.</simpara>
+<note>
+<simpara>Hlavními autory UNIXu (vedoucími vývoje) byli <emphasis role="strong">Ken Thompson</emphasis> a <emphasis role="strong">Dennis Ritchie</emphasis>.</simpara>
+</note>
+<figure>
+<title>Ken Thompson a Dennis Ritchie, licence: public domain</title>
+<mediaobject>
+<imageobject>
+<imagedata fileref="thompson-ritchie.jpg"/>
+</imageobject>
+<textobject><phrase>thompson ritchie</phrase></textobject>
+</mediaobject>
+</figure>
+<simpara>Existuje mnoho různých systémů, které jsou více či méně <emphasis role="strong">přímými pokračovateli Unixu</emphasis> (tak, že i z větší či menší části staví na jeho zdrojových kódech). Za všechny lze zmínit FreeBSD a OpenBSD, Solaris, IBM AIX a dokonce macOS. Lze usilovat o certifikaci operačního systému jakožto Unixu (tzn., že systém odpovídá jeho specifikaci).</simpara>
+<tip>
+<simpara>Například už zmíněný macOS (dříve Mac OS X) je <emphasis role="strong">certifikovaným UNIXem</emphasis> od <link xl:href="http://www.opengroup.org/openbrand/register/brand3555.htm">verze 10.5</link>.</simpara>
+</tip>
+</section>
+<section xml:id="_richard_stallman_a_projekt_gnu">
+<title>Richard Stallman a projekt GNU</title>
+<orderedlist numeration="arabic">
+<title>Projekt GNU je pro nás důležitý dvěma zásadními výstupy:</title>
+<listitem>
+<simpara>vytvořením obrovské <emphasis role="strong">sady utilit</emphasis> pro předpokládaný unixový operační systém;</simpara>
+</listitem>
+<listitem>
+<simpara>vytvořením <emphasis role="strong">sady licencí</emphasis> pro tzv. "svobodný software" (viz dále) včetně GNU GPL.</simpara>
+</listitem>
+</orderedlist>
+<simpara>Původní snahou projektu bylo vyvinou zcela nový, <emphasis role="strong">na nových zdrojových kódech postavený</emphasis> (ale filosofii UNIXu ctící) operační systém, který by byl tzv. svobodný (viz níže). Byl to ambiciózní projekt a bohužel se mu nepodařilo vyvinou hlavní komponentu systému&#8201;&#8212;&#8201;jádro.</simpara>
+<tip>
+<simpara>GNU znamená GNU is not UNIX. Čistě pro zajímavost&#8201;&#8212;&#8201;jedná se o rekurzivní akronym.</simpara>
+</tip>
+</section>
+<section xml:id="_linus_torvalds_a_freaks">
+<title>Linus Torvalds a "Freaks"</title>
+<simpara>Můžeme být rádi, že původní název pro operační systém vyvíjený Linusem Torvaldsem neujal. A o co tomuto finskému studentovi vlastně na přelomu 80. a 90. let šlo? Snažil se vyvinout operační systém pro počítače používající <emphasis role="strong">procesory Intel 386</emphasis>. Jak se sám <link xl:href="https://en.wikipedia.org/wiki/History_of_Linux">vyjádřil</link>: "I&#8217;m doing a (free) operating system (just a hobby, won&#8217;t be big and professional like gnu) for 386(486) AT clones." Projekt se stal i díky otevřenému vývojovému modelu velmi populárním a další dění už je historie.</simpara>
+<tip>
+<simpara>Nakonec právě výstupy projektu GNU, který ve výroku zmiňuje, byly pro úspěch projektu zásadní, neboť je mohl zkombinovat se svou prací (tedy jádrem operačního systému), bez nutnosti vyvíjet vše úplně od začátku. Proto se ostatně setkáváme s pojmem <emphasis role="strong">GNU/Linux</emphasis>.</simpara>
+</tip>
+</section>
+</chapter>
+<chapter xml:id="_svobodný_software_a_open_source">
+<title>Svobodný software a Open source</title>
+<section xml:id="_svobodný_software">
+<title>Svobodný software</title>
+<simpara>Aneb co dělá svobodný (= free) software svobodným? Svoboda je uvažována ve smyslu práv uživatele nějakým způsobem s tímto softwarem nakládat. Svobodným ve smyslu, co nejvolnějším, ale stále při zachování stejných práv ostatním uživatelům. Častý omyl je chápání slova <emphasis>free</emphasis> ve smyslu <emphasis>zadarmo</emphasis>. Svobodný software nicméně <emphasis role="strong">může být v určitých situacích dokonce i placený</emphasis> (např. jeho distribuce směrem k uživateli), jakkoliv je to spíše vzácné.</simpara>
+<tip>
+<simpara>Richard Stallman to vyjadřuje <link xl:href="https://www.gnu.org/philosophy/free-sw.html">výstižně</link>: "Abyste správně porozuměli podstatě věci, měli byste chápat slovo free ve spojení free speech (svobodný projev), nikoliv jako free beer (pivo zadarmo)."</simpara>
+</tip>
+</section>
+<section xml:id="_open_source">
+<title>Open source</title>
+<simpara>Open source řeší obdobnou problematiku jako svobodný software, ale dívá se na ni <emphasis role="strong">jinou optikou</emphasis>. Jako hlavní výhodu vnímá otevřený vývoj ve stylu "kdokoliv může přispět" a "kdokoliv může odhalit a opravit chybu" (velmi zjednodušeně řečeno). Přes veškerou dramatickou rétoriku platí, že prakticky všechny nejvýznamnější Open source licence jsou zároveň i Free software licencemi a naopak :-)</simpara>
+<tip>
+<simpara>Vývojový model v rámci Open source krásně popsal Eric S. Raymond v eseji <link xl:href="http://www.root.cz/knihy/katedrala-a-trziste/">Katedrála a tržiště</link>.</simpara>
+</tip>
+</section>
+<section xml:id="_licence_gnu_gpl">
+<title>Licence GNU GPL</title>
+<orderedlist numeration="arabic">
+<title>Z licence vyplývá několik <link xl:href="https://www.gnu.org/philosophy/free-sw.cs.html">základních principů</link> svobodného software:</title>
+<listitem>
+<simpara>Svoboda <emphasis role="strong">spustit program</emphasis> za jakýmkoliv účelem (svoboda 0).</simpara>
+</listitem>
+<listitem>
+<simpara>Svoboda <emphasis role="strong">studovat, jak program pracuje</emphasis> a přizpůsobit ho svým potřebám (svoboda 1). Předpokladem k výše uvedenému je přístup ke zdrojovému kódu.</simpara>
+</listitem>
+<listitem>
+<simpara>Svoboda <emphasis role="strong">redistribuovat kopie</emphasis>, abyste pomohli vašemu kolegovi (svoboda 2).</simpara>
+</listitem>
+<listitem>
+<simpara>Svoboda vylepšovat program a zveřejňovat zlepšení, aby z nich mohla mít prospěch celá komunita. (svoboda 3). Předpokladem k výše uvedenému je <emphasis role="strong">přístup ke zdrojovému kódu</emphasis>.</simpara>
+</listitem>
+</orderedlist>
+<note>
+<simpara>Zajímavý princip GNU GPL je, že nikdo <emphasis role="strong">nemůže zdrojový kód pod ní šířený uzavřít</emphasis>. Dokonce i vy, chcete-li svůj projekt obohatit o kód pod GNU GPL, musíte výsledné dílo zveřejnit opět zase pod GNU GPL.</simpara>
+</note>
+<tip>
+<simpara>Další licence? Můžeme se podívat třeba na MIT, či BSD licence (tzv. permisivní licence), nebo na plejádu <emphasis role="strong">Creative Commons</emphasis> licencí, které se na problematiku svobodných děl dívají (a hodí se pro) ještě z jiného úhlu pohledu než právě GNU GPL. (Tu označujeme jako copyleftovou.)</simpara>
+</tip>
+</section>
+</chapter>
+<chapter xml:id="_adresářová_struktura">
+<title>Adresářová struktura</title>
+<simpara>Už padlo, že je <emphasis role="strong">hierarchická</emphasis>. Ale co to znamená?</simpara>
+<tip>
+<simpara>Níže můžete vidět vybrané adresáře a soubory <emphasis role="strong">pro ilustraci</emphasis> principu.</simpara>
+</tip>
+<literallayout class="monospaced">                            /   &lt;---------------------------------------- Kořenový adresář
+                            |
+ ---------------------------|---------------------------------
+ |    |     |    |    |     |     |    |    |     |     |    |
+bin  boot  dev  etc  home  lib   mnt  opt  proc  root  usr  var   &lt;------ Vnořené adresáře
+ |               |                          |           |
+bash         ----|----                   cpuinfo    ----|----
+             |       |                              |       |
+           passwd  httpd                         include  share
+                     |                              |
+                 httpd.conf                      stdio.h</literallayout>
+</chapter>
+<chapter xml:id="_linuxové_distribuce">
+<title>Linuxové distribuce</title>
+<section xml:id="_co_je_to_linuxová_distribuce">
+<title>Co je to linuxová distribuce?</title>
+<simpara>Linuxová distribuce je <emphasis role="strong">ucelený operační systém</emphasis> tak, jak je poskytován uživatelům. Neexistuje "ten jeden" operační systém Linux (schválně zkuste dohledat), ale mnoho tzv. distribucí, které kombinují Linux (nyní myšleno jako jádro), sadu základních utilit (např. zrovna těch od GNU), aplikačního software, určitý balíčkovací systém, grafické prostředí a mnoho dalšího. Podle toho, jak je která distribuce "poskládána", tak můžeme řešit její vhodnost pro určité nasazení.</simpara>
+<note>
+<simpara><emphasis role="strong">Příklady linuxových distribucí?</emphasis> Z nejvýznamnějších lze zmínit např. Debian, Ubuntu, Fedoru či OpenSUSE. A pokud by nás zajímaly distribuce využívající nějaký komerční model, jistě můžeme zmínit Red Hat Enterprise Linux (RHEL) nebo SUSE Linux Enterprise Desktop (SLES).</simpara>
+</note>
+<tip>
+<simpara><emphasis role="strong">Komerční modely</emphasis>, komerční distribuce&#8230;&#8203;? Lze to vůbec? Jistě lze, je možné vydělávat na aktivitách okolo Linuxu jako takového, ať už se jedná o <emphasis role="strong">poskytování podpory</emphasis> (asi nejvýznamnější oblast), nebo oblast školení a certifikací. Mnoho firem rovněž používá Linux jako základ pro své podnikání a přímo platí vývojáře, kteří se na jeho vývoji podílejí.</simpara>
+</tip>
+</section>
+</chapter>
 <chapter xml:id="_klíčové_pojmy">
 <title>Klíčové pojmy</title>
-<simpara>TODO</simpara>
+<simpara>gnu, gnu gpl, linux, unix, distribuce, svobodný software, open source, Linux Torvalds, Richard Stallman, komerční podpora, ext4, kořenový adresář, hierarchická struktura</simpara>
 </chapter>
 <chapter xml:id="_použité_zdroje">
 <title>Použité zdroje</title>
-<simpara>TODO</simpara>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara><link xl:href="https://www.debian.org/releases/wheezy/amd64/ch01s02.html.en">https://www.debian.org/releases/wheezy/amd64/ch01s02.html.en</link></simpara>
+</listitem>
+<listitem>
+<simpara><link xl:href="https://www.gnu.org/philosophy/free-sw.cs.html">https://www.gnu.org/philosophy/free-sw.cs.html</link></simpara>
+</listitem>
+<listitem>
+<simpara><link xl:href="https://www.gnu.org/philosophy/free-sw.html">https://www.gnu.org/philosophy/free-sw.html</link></simpara>
+</listitem>
+<listitem>
+<simpara><link xl:href="http://www.opengroup.org/">http://www.opengroup.org/</link></simpara>
+</listitem>
+<listitem>
+<simpara><link xl:href="https://en.wikipedia.org/wiki/History_of_Linux">https://en.wikipedia.org/wiki/History_of_Linux</link></simpara>
+</listitem>
+<listitem>
+<simpara><link xl:href="https://cs.wikipedia.org/wiki/Unix">https://cs.wikipedia.org/wiki/Unix</link></simpara>
+</listitem>
+</orderedlist>
 </chapter>
 <chapter xml:id="_kam_dál">
 <title>Kam dál?</title>
-<simpara>TODO</simpara>
+<itemizedlist>
+<title>Podrobné rozepsání důvodu použití spojení GNU/Linux:</title>
+<listitem>
+<simpara><link xl:href="https://www.gnu.org/gnu/why-gnu-linux.cs.html">https://www.gnu.org/gnu/why-gnu-linux.cs.html</link></simpara>
+</listitem>
+</itemizedlist>
+<itemizedlist>
+<title>Free Software Foundation (schvaluje licence svobodného software):</title>
+<listitem>
+<simpara><link xl:href="http://www.fsf.org/">http://www.fsf.org/</link></simpara>
+</listitem>
+</itemizedlist>
+<itemizedlist>
+<title>Open Source Initiative (schvaluje licence Open source):</title>
+<listitem>
+<simpara><link xl:href="https://opensource.org/">https://opensource.org/</link></simpara>
+</listitem>
+</itemizedlist>
 <simpara><?asciidoc-hr?></simpara>
 <itemizedlist>
 <listitem>
-<simpara>Přehled kapitol: [<link xl:href="../README.html">html</link>] [<link xl:href="../README.md">asciidoc</link>]</simpara>
+<simpara>Přehled kapitol: [<link xl:href="../README.html">html</link>] [<link xl:href="../README.pdf">pdf</link>] [<link xl:href="../README.asciidoc">asciidoc</link>]</simpara>
 </listitem>
 </itemizedlist>
 </chapter>

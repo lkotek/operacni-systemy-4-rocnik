@@ -36,46 +36,65 @@ TIP: Označujeme ho proto jako svobodný software / Open source.
 
 .Problém lze uchopit dvěma způsoby:
 
-. je to historický operační systém původem z přelomu 60. a 70. let;
-. jedná se o ochranou známku (aktuálně organizace The Open Group).
+. je to historický *operační systém* původem z přelomu 60. a 70. let;
+. jedná se o *ochranou známku* (aktuálně organizace The Open Group).
 
-Přitom oba pohledy jsou korektní. Unix (zcela korektně psáno UNIX a naopak historicky UNICS) byl operační systém na svou dobu velmi pokrokový. Zejména díky tomu, že byl víceuživatelský a byl přenositelný mezi různými počítači (ve smyslu zkompilovatelný pro ně), čemuž vděčil za to, že byl z podstatné části napsán v jazyce C.
+Přitom oba pohledy jsou korektní. Unix (zcela korektně psáno UNIX a naopak historicky UNICS) byl operační systém na svou dobu velmi pokrokový. Zejména díky tomu, že byl víceuživatelský a byl přenositelný mezi různými počítači (ve smyslu zkompilovatelný pro ně), čemuž vděčil za to, že byl z podstatné části *napsán v jazyce C*.
 
-NOTE: Hlavními autory UNIXu (vedoucími vývoje) jsou *Ken Thompson* a *Dennis Ritchie*.
+NOTE: Hlavními autory UNIXu (vedoucími vývoje) byli *Ken Thompson* a *Dennis Ritchie*.
 
-Existuje mnoho různých systémů, které jsou více či méně přímými pokračovateli Unixu (tak, že i z větší či menší části staví na jeho zdrojových kódech). Za všechny lze zmínit FreeBSD a OpenBSD, Solaris, IBM AIX a dokonce macOS. Lze usilovat o certifikaci operačního systému jakožto Unixu (tzn., že systém odpovídá jeho specifikaci).
+image::thompson-ritchie.jpg[caption="Obrázek 1: ", title="Ken Thompson a Dennis Ritchie, licence: public domain", link="https://en.wikipedia.org/wiki/File:Ken_n_dennis.jpg"]
 
-TIP: Například už zmíněný macOS (dříve Mac OS X) je certifikovaným UNIXem od http://www.opengroup.org/openbrand/register/brand3555.htm[verze 10.5].
+Existuje mnoho různých systémů, které jsou více či méně *přímými pokračovateli Unixu* (tak, že i z větší či menší části staví na jeho zdrojových kódech). Za všechny lze zmínit FreeBSD a OpenBSD, Solaris, IBM AIX a dokonce macOS. Lze usilovat o certifikaci operačního systému jakožto Unixu (tzn., že systém odpovídá jeho specifikaci).
+
+TIP: Například už zmíněný macOS (dříve Mac OS X) je *certifikovaným UNIXem* od http://www.opengroup.org/openbrand/register/brand3555.htm[verze 10.5].
 
 === Richard Stallman a projekt GNU
 
 .Projekt GNU je pro nás důležitý dvěma zásadními výstupy:
 
-. vytvořením obrovské sady utilit pro předpokládaný unixový operační systém;
-. vytvořením sady licencí pro tzv. "svobodný software" (viz dále) včetně GNU GPL.
+. vytvořením obrovské *sady utilit* pro předpokládaný unixový operační systém;
+. vytvořením *sady licencí* pro tzv. "svobodný software" (viz dále) včetně GNU GPL.
+
+Původní snahou projektu bylo vyvinou zcela nový, *na nových zdrojových kódech postavený* (ale filosofii UNIXu ctící) operační systém, který by byl tzv. svobodný (viz níže). Byl to ambiciózní projekt a bohužel se mu nepodařilo vyvinou hlavní komponentu systému -- jádro. 
 
 TIP: GNU znamená GNU is not UNIX. Čistě pro zajímavost -- jedná se o rekurzivní akronym.
 
 === Linus Torvalds a "Freaks"
 
+Můžeme být rádi, že původní název pro operační systém vyvíjený Linusem Torvaldsem neujal. A o co tomuto finskému studentovi vlastně na přelomu 80. a 90. let šlo? Snažil se vyvinout operační systém pro počítače používající *procesory Intel 386*. Jak se sám https://en.wikipedia.org/wiki/History_of_Linux[vyjádřil]: "I'm doing a (free) operating system (just a hobby, won't be big and professional like gnu) for 386(486) AT clones." Projekt se stal i díky otevřenému vývojovému modelu velmi populárním a další dění už je historie.
+
+TIP: Nakonec právě výstupy projektu GNU, který ve výroku zmiňuje, byly pro úspěch projektu zásadní, neboť je mohl zkombinovat se svou prací (tedy jádrem operačního systému), bez nutnosti vyvíjet vše úplně od začátku. Proto se ostatně setkáváme s pojmem *GNU/Linux*.
+
 == Svobodný software a Open source
 === Svobodný software
 
-Aneb co dělá svobodný (= free) software svobodným? Svoboda je uvažována ve smyslu práv uživatele nějakým způsobem s tímto softwarem nakládat. Svobodným ve smyslu, co nejvolnějším, ale stále při zachování stejných práv ostatním uživatelům. Častý omyl je chápání slova _free_ ve smyslu _zadarmo_. Svobodný software nicméně může být v určitých situacích dokonce i placený (např. jeho distribuce směrem k uživateli), jakkoliv je to spíše vzácné. 
+Aneb co dělá svobodný (= free) software svobodným? Svoboda je uvažována ve smyslu práv uživatele nějakým způsobem s tímto softwarem nakládat. Svobodným ve smyslu, co nejvolnějším, ale stále při zachování stejných práv ostatním uživatelům. Častý omyl je chápání slova _free_ ve smyslu _zadarmo_. Svobodný software nicméně *může být v určitých situacích dokonce i placený* (např. jeho distribuce směrem k uživateli), jakkoliv je to spíše vzácné. 
 
 TIP: Richard Stallman to vyjadřuje https://www.gnu.org/philosophy/free-sw.html[výstižně]: "Abyste správně porozuměli podstatě věci, měli byste chápat slovo free ve spojení free speech (svobodný projev), nikoliv jako free beer (pivo zadarmo)."
 
 === Open source
 
+Open source řeší obdobnou problematiku jako svobodný software, ale dívá se na ni *jinou optikou*. Jako hlavní výhodu vnímá otevřený vývoj ve stylu "kdokoliv může přispět" a "kdokoliv může odhalit a opravit chybu" (velmi zjednodušeně řečeno). Přes veškerou dramatickou rétoriku platí, že prakticky všechny nejvýznamnější Open source licence jsou zároveň i Free software licencemi a naopak :-)
+
 TIP: Vývojový model v rámci Open source krásně popsal Eric S. Raymond v eseji http://www.root.cz/knihy/katedrala-a-trziste/[Katedrála a tržiště].
 
 === Licence GNU GPL
 
-=== Další licence
+.Z licence vyplývá několik https://www.gnu.org/philosophy/free-sw.cs.html[základních principů] svobodného software:
+
+. Svoboda *spustit program* za jakýmkoliv účelem (svoboda 0).
+. Svoboda *studovat, jak program pracuje* a přizpůsobit ho svým potřebám (svoboda 1). Předpokladem k výše uvedenému je přístup ke zdrojovému kódu.
+. Svoboda *redistribuovat kopie*, abyste pomohli vašemu kolegovi (svoboda 2).
+. Svoboda vylepšovat program a zveřejňovat zlepšení, aby z nich mohla mít prospěch celá komunita. (svoboda 3). Předpokladem k výše uvedenému je *přístup ke zdrojovému kódu*.
+
+NOTE: Zajímavý princip GNU GPL je, že nikdo *nemůže zdrojový kód pod ní šířený uzavřít*. Dokonce i vy, chcete-li svůj projekt obohatit o kód pod GNU GPL, musíte výsledné dílo zveřejnit opět zase pod GNU GPL.
+
+TIP: Další licence? Můžeme se podívat třeba na MIT, či BSD licence (tzv. permisivní licence), nebo na plejádu *Creative Commons* licencí, které se na problematiku svobodných děl dívají (a hodí se pro) ještě z jiného úhlu pohledu než právě GNU GPL. (Tu označujeme jako copyleftovou.)
 
 == Adresářová struktura
 
-Už padlo, že je hierarchická. Ale co to znamená?
+Už padlo, že je *hierarchická*. Ale co to znamená?
 
 TIP: Níže můžete vidět vybrané adresáře a soubory *pro ilustraci* principu.
 
@@ -94,22 +113,36 @@ TIP: Níže můžete vidět vybrané adresáře a soubory *pro ilustraci* princi
 == Linuxové distribuce
 === Co je to linuxová distribuce?
 
-=== Komerční modely
+Linuxová distribuce je *ucelený operační systém* tak, jak je poskytován uživatelům. Neexistuje "ten jeden" operační systém Linux (schválně zkuste dohledat), ale mnoho tzv. distribucí, které kombinují Linux (nyní myšleno jako jádro), sadu základních utilit (např. zrovna těch od GNU), aplikačního software, určitý balíčkovací systém, grafické prostředí a mnoho dalšího. Podle toho, jak je která distribuce "poskládána", tak můžeme řešit její vhodnost pro určité nasazení.
 
-=== Příklady linuxových distribucí
+NOTE: *Příklady linuxových distribucí?* Z nejvýznamnějších lze zmínit např. Debian, Ubuntu, Fedoru či OpenSUSE. A pokud by nás zajímaly distribuce využívající nějaký komerční model, jistě můžeme zmínit Red Hat Enterprise Linux (RHEL) nebo SUSE Linux Enterprise Desktop (SLES).
+
+TIP: *Komerční modely*, komerční distribuce...? Lze to vůbec? Jistě lze, je možné vydělávat na aktivitách okolo Linuxu jako takového, ať už se jedná o *poskytování podpory* (asi nejvýznamnější oblast), nebo oblast školení a certifikací. Mnoho firem rovněž používá Linux jako základ pro své podnikání a přímo platí vývojáře, kteří se na jeho vývoji podílejí.
 
 == Klíčové pojmy
 
-gnu, gnu gpl, linux, unix, distribuce, svobodný software, open source, Linux Torvalds, Richard Stallman, komerční podpora, ext4 
+gnu, gnu gpl, linux, unix, distribuce, svobodný software, open source, Linux Torvalds, Richard Stallman, komerční podpora, ext4, kořenový adresář, hierarchická struktura
 
 == Použité zdroje
 
-TODO
+. https://www.debian.org/releases/wheezy/amd64/ch01s02.html.en
+. https://www.gnu.org/philosophy/free-sw.cs.html
+. https://www.gnu.org/philosophy/free-sw.html
+. http://www.opengroup.org/
+. https://en.wikipedia.org/wiki/History_of_Linux
+. https://cs.wikipedia.org/wiki/Unix
+
 
 == Kam dál?
 
-.Podprobné rozepsání důvodu použití spojení GNU/Linux:
+.Podrobné rozepsání důvodu použití spojení GNU/Linux:
 * https://www.gnu.org/gnu/why-gnu-linux.cs.html
+
+.Free Software Foundation (schvaluje licence svobodného software):
+* http://www.fsf.org/
+
+.Open Source Initiative (schvaluje licence Open source):
+* https://opensource.org/
 
 ---
 
