@@ -101,7 +101,7 @@ TIP: Další licence? Můžeme se podívat třeba na MIT, či BSD licence (tzv. 
 
 Už padlo, že je *hierarchická*. Ale co to znamená?
 
-TIP: Níže můžete vidět vybrané adresáře a soubory *pro ilustraci* principu.
+TIP: Níže můžete vidět vybrané adresáře a soubory *pro ilustraci* zmíněného principu.
 
                              /   <---------------------------------------- Kořenový adresář 
                              |
