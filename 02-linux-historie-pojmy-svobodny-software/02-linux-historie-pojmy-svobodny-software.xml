@@ -4,7 +4,7 @@
 <book xmlns="http://docbook.org/ns/docbook" xmlns:xl="http://www.w3.org/1999/xlink" version="5.0" xml:lang="en">
 <info>
 <title>GNU/Linux&#8201;&#8212;&#8201;historie, pojmy a svobodný software</title>
-<date>2016-10-02</date>
+<date>2016-10-04</date>
 </info>
 <preface>
 <title></title>
@@ -15,6 +15,12 @@
 <title>GNU/Linux</title>
 <section xml:id="_definice">
 <title>Definice</title>
+<blockquote>
+<attribution>
+<link xl:href="https://git.kernel.org/cgit/linux/kernel/git/torvalds/linux.git/about/">Zdroj: kernel.org</link>
+</attribution>
+<simpara>Linux is a clone of the operating system Unix, written from scratch by Linus Torvalds with assistance from a loosely-knit team of hackers across the Net. It aims towards POSIX and Single UNIX Specification compliance.</simpara>
+</blockquote>
 <blockquote>
 <attribution>
 <link xl:href="https://www.debian.org/releases/wheezy/amd64/ch01s02.html.en">Zdroj: www.debian.org</link>
