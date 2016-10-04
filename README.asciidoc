@@ -16,5 +16,4 @@ NOTE: Tento dokument nemá ambici v žádném slova smyslu suplovat technickou d
 
 . GNU/Linux -- historie, pojmy a svobodný software [link:02-linux-historie-pojmy-svobodny-software/02-linux-historie-pojmy-svobodny-software.html[html]] [link:02-linux-historie-pojmy-svobodny-software/02-linux-historie-pojmy-svobodny-software.pdf[pdf]] [link:02-linux-historie-pojmy-svobodny-software/02-linux-historie-pojmy-svobodny-software.adoc[asciidoc]]
 
-. TO DO :-)
-
+. Správa uživatelů, přístupová práva a diskové kvóty [link:03-uzivatele-prava-diskove-kvoty/03-uzivatele-prava-diskove-kvoty.html[html]] [link:03-uzivatele-prava-diskove-kvoty/03-uzivatele-prava-diskove-kvoty.pdf[pdf]] [link:03-uzivatele-prava-diskove-kvoty/03-uzivatele-prava-diskove-kvoty.adoc[asciidoc]]
