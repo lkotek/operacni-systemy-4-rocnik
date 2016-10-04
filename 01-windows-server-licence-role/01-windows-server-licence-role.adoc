@@ -40,7 +40,7 @@ TIP: Zkratka znamená **C**lient **A**ccess **L**icence.
 
 Pořizujeme množství licencí *pro uživatele*, kteří se budou připojovat k serveru. Lze nakoupit po balíčcích.
 
-.Varianta "Per Client":
+.Varianta "Per Client (Device)":
 
 Pořizujeme licence *pro zařízení*, která se budou připojovat k danému serveru (opět, lze nakoupit po balíčcích).
 

@@ -4,7 +4,7 @@
 <book xmlns="http://docbook.org/ns/docbook" xmlns:xl="http://www.w3.org/1999/xlink" version="5.0" xml:lang="en">
 <info>
 <title>MS Windows Server&#8201;&#8212;&#8201;licence a role; Virtualizace</title>
-<date>2016-09-21</date>
+<date>2016-10-04</date>
 </info>
 <preface>
 <title></title>
@@ -70,7 +70,7 @@
 <para>Pořizujeme množství licencí <emphasis role="strong">pro uživatele</emphasis>, kteří se budou připojovat k serveru. Lze nakoupit po balíčcích.</para>
 </formalpara>
 <formalpara>
-<title>Varianta "Per Client":</title>
+<title>Varianta "Per Client (Device)":</title>
 <para>Pořizujeme licence <emphasis role="strong">pro zařízení</emphasis>, která se budou připojovat k danému serveru (opět, lze nakoupit po balíčcích).</para>
 </formalpara>
 <tip>
