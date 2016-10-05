@@ -4,16 +4,71 @@
 <book xmlns="http://docbook.org/ns/docbook" xmlns:xl="http://www.w3.org/1999/xlink" version="5.0" xml:lang="en">
 <info>
 <title>Správa uživatelů, přístupová práva a diskové kvóty</title>
-<date>2016-09-06</date>
+<date>2016-10-05</date>
 </info>
 <preface>
 <title></title>
 <simpara>&#169; Lukáš Kotek, <link xl:href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA 4.0</link></simpara>
-<note>
-<simpara>Tento dokument je <emphasis role="strong">NEHOTOVÁ</emphasis> prázdná šablona. Materiály budou v rámci roku průběžně doplňovány.</simpara>
-</note>
 <simpara><?asciidoc-pagebreak?></simpara>
 </preface>
+<chapter xml:id="_uživatelé_a_skupiny">
+<title>Uživatelé a skupiny</title>
+<section xml:id="_pojetí_na_ms_windows">
+<title>Pojetí na MS Windows</title>
+<section xml:id="_lokální_a_doménové_účty">
+<title>Lokální a doménové účty</title>
+
+</section>
+<section xml:id="_základní_konfigurace">
+<title>Základní konfigurace</title>
+
+</section>
+</section>
+<section xml:id="_pojetí_v_gnu_linuxu">
+<title>Pojetí v GNU/Linuxu</title>
+<section xml:id="_základní_principy">
+<title>Základní principy</title>
+
+</section>
+<section xml:id="_soubory_passwd_a_shadow">
+<title>Soubory passwd a shadow</title>
+
+</section>
+<section xml:id="_základní_utility">
+<title>Základní utility</title>
+
+</section>
+</section>
+</chapter>
+<chapter xml:id="_oprávnění">
+<title>Oprávnění</title>
+<section xml:id="_pojetí_v_ms_windows">
+<title>Pojetí v MS Windows</title>
+
+</section>
+<section xml:id="_pojetí_v_gnu_linuxu_2">
+<title>Pojetí v GNU/Linuxu</title>
+<section xml:id="_principy_oprávnění">
+<title>Principy oprávnění</title>
+
+</section>
+<section xml:id="_základní_příkazy">
+<title>Základní příkazy</title>
+
+</section>
+</section>
+</chapter>
+<chapter xml:id="_diskové_kvóty">
+<title>Diskové kvóty</title>
+<section xml:id="_princip_kvót">
+<title>Princip kvót</title>
+
+</section>
+<section xml:id="_příkazy_a_nastavení">
+<title>Příkazy a nastavení</title>
+
+</section>
+</chapter>
 <chapter xml:id="_klíčové_pojmy">
 <title>Klíčové pojmy</title>
 <simpara>TODO</simpara>
@@ -28,7 +83,7 @@
 <simpara><?asciidoc-hr?></simpara>
 <itemizedlist>
 <listitem>
-<simpara>Přehled kapitol: [<link xl:href="../README.html">html</link>] [<link xl:href="../README.md">asciidoc</link>]</simpara>
+<simpara>Přehled kapitol: [<link xl:href="../README.html">html</link>] [<link xl:href="../README.pdf">pdf</link>] [<link xl:href="../README.asciidoc">asciidoc</link>]</simpara>
 </listitem>
 </itemizedlist>
 </chapter>
