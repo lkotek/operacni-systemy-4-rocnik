@@ -1,4 +1,4 @@
-#/bin/bash
+#!/bin/bash
 
 cd $(dirname $1)
 FNAME=$(basename $1)
