@@ -1,4 +1,4 @@
-= Souborové systémy, zabezpečení a oprávnění
+= ouborové systémy, zabezpečení a diskové kvóty
 :source-highlighter: coderay
 :listing-caption: Listing
 :pdf-page-size: A4
@@ -6,23 +6,81 @@
 
 (C) Lukáš Kotek, link:https://creativecommons.org/licenses/by-sa/4.0/[CC-BY-SA 4.0]
 
-NOTE: Tento dokument je *NEHOTOVÁ* prázdná šablona. Materiály budou v rámci roku průběžně doplňovány.
-
 <<<
+
+== Co je to souborový systém?
+
+Jedná se o způsob, jak organizovat data v rámci nějakého diskového (nebo jiného) úložiště do podoby souborů, složek a odkazů.
+
+=== Vybrané souborové systémy
+
+.FAT32, exFAT (FAT64)
+
+Spíše historické souborové systémy z dílny Microsoftu, dnes nejtypičtější na výměnných médiích. FAT 32 podporuje pouze soubory (na základě 32bitového adresování) do velikosti 4 GiB. Nepodporují pokročilá oprávnění.
+
+.NTFS
+
+Souborový systém od Microsoftu, který v současné verzi podporuje všechny klíčové prvky moderních filesystémů (žurnálování, oprávnění apod.). Již delší dobu podporuje i pojetí symbolických a pevných odkazů (uvedeno cca v době MS Windows Vista).
+
+.ext2, ext3, ext3, xfs
+
+Souborové systémy typické pro operační systém GNU/Linux, vyjma ext2 podporují žurnálování. Podporují pevné a symbolické odkazy a další prvky typické pro klasické unixové filesystémy. Základním kamenem jejich pojetí je inode.
+
+.btrfs
+
+Stále mírně experimentální systém poplatný operačnímu systému GNU/Linux.
+
+NOTE: U souborových systémů sledujeme mnoho klíčových vlastností. Např. maximální povolenou velikost souboru, podporu oprávnění a žurnálování, přístup k řešení fragmentace dat. Rychlost čtení a zápisu dat v návaznosti na způsob organizace dat apod.
+
+=== Vybrané pojmy
+
+.Žurnálování
+
+Technika uchovávající informace o dění v rámci filesystému do tzv. žurnálu. Praktické v případě přerušení operace v rámci souborového systému nežádoucím způsobem (výpadek napájení, odpojení média, na něž je prováděn zápis apod).
+
+.FAT a MFT
+
+File Allocation Table a Master File Table -- základní prvek souborových systémů FAT (resp. NTFS). Obsahují informace o všech záznamech v rámci filesystému. Dojde-li tak např. ke smazání souboru, je reálně pouze odstraněn záznam z těchto tabulek.
+
+.Inode
+
+Místo, kde jsou v unixových filesystémem schraňována metadata o souborech, adresářích a odkazech. Každý inode má své pevně přiřazené číslo a může obsahovat více různých pojmenování (bavíme se pak o pevných odkazech).
+
+NOTE: Jaký je rozdíl mezi měkkým (soft) a tvrdým odkazem?
+
+== Diskové kvóty
+
+=== Koncepce diskových kvót
+
+Diskové kvóty existují na mnoha operačních systémech. Limitují, kolik místa, nebo počet souborů či složek, na sebe v rámci jednoho diskového oddílu může mít vztažen uživatel, nebo skupina.
+
+NOTE: Podržíme-li se GNU/Linuxu, pak je nutné vědět, že kvóty (jede-li o diskový prostor) přidělujeme ne na základě hodnoty v MB (resp. MiB), ale dle hodnoty v blocích (totéž co alokační jednotka). Pokud máme například velikost bloku 4 KiB, pak, chceme-li nastavit limit např. 100 MiB, podělíme tuto hodnotu 4 KiB a výsledný počet bloků nastavíme jako velikost kvóty.
+
+=== Měkká a tvrdá kvóta
+
+.Měkká kvóta
+
+Je dočasně překročnitelná (po dobu tzv. grace time).
+
+.Tvrdá kvóty
+
+Je aplikovaná okamžitě po jejím překročení.
 
 == Klíčové pojmy
 
-TODO
+souborový systém, fat32, extfat, ext2, ext4, ntfs, xfs, btrfs, inode, mft, žurnálování, fragmentace, měkká kvóta, tvrdá kvóta, symbolický odkaz
 
-== Použité zdroje
+== Zdroje a kam dál?
 
-TODO
-
-== Kam dál?
-
-TODO
+. http://www.howtogeek.com/235596/whats-the-difference-between-fat32-exfat-and-ntfs/
+. https://technet.microsoft.com/en-us/library/cc938438.aspx
+. http://www.tldp.org/LDP/intro-linux/html/sect_03_01.html
+. https://www.cyberciti.biz/tips/understanding-unixlinux-filesystem-inodes.html
+. http://www.jiribrejcha.net/2010/08/naucte-se-pracovat-se-symbolickymi-a-pevnymi-odkazy/
+. http://www.zbynek.adamh.cz/cs/061744/Pocitac/Clanky/Symbolicke-odkazy-ve-Windows/
+. https://debian-handbook.info/browse/vi-VN/stable/sect.quotas.html
 
 ---
 
-- Přehled kapitol: [link:../README.html[html]] [link:../README.md[asciidoc]]
+- Přehled kapitol: [link:../README.html[html]] [link:../README.pdf[pdf]] [link:../README.asciidoc[asciidoc]]
 

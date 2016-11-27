@@ -4,7 +4,7 @@
 <book xmlns="http://docbook.org/ns/docbook" xmlns:xl="http://www.w3.org/1999/xlink" version="5.0" xml:lang="en">
 <info>
 <title>Operační systémy&#8201;&#8212;&#8201;servery (OSC)</title>
-<date>2016-10-04</date>
+<date>2016-11-20</date>
 </info>
 <preface>
 <title></title>
@@ -24,7 +24,13 @@
 <simpara>GNU/Linux&#8201;&#8212;&#8201;historie, pojmy a svobodný software [<link xl:href="02-linux-historie-pojmy-svobodny-software/02-linux-historie-pojmy-svobodny-software.html">html</link>] [<link xl:href="02-linux-historie-pojmy-svobodny-software/02-linux-historie-pojmy-svobodny-software.pdf">pdf</link>] [<link xl:href="02-linux-historie-pojmy-svobodny-software/02-linux-historie-pojmy-svobodny-software.adoc">asciidoc</link>]</simpara>
 </listitem>
 <listitem>
-<simpara>Správa uživatelů, přístupová práva a diskové kvóty [<link xl:href="03-uzivatele-prava-diskove-kvoty/03-uzivatele-prava-diskove-kvoty.html">html</link>] [<link xl:href="03-uzivatele-prava-diskove-kvoty/03-uzivatele-prava-diskove-kvoty.pdf">pdf</link>] [<link xl:href="03-uzivatele-prava-diskove-kvoty/03-uzivatele-prava-diskove-kvoty.adoc">asciidoc</link>]</simpara>
+<simpara>Správa uživatelů, přístupová práva a skupiny [<link xl:href="03-uzivatele-prava-diskove-kvoty/03-uzivatele-prava-diskove-kvoty.html">html</link>] [<link xl:href="03-uzivatele-prava-diskove-kvoty/03-uzivatele-prava-diskove-kvoty.pdf">pdf</link>] [<link xl:href="03-uzivatele-prava-diskove-kvoty/03-uzivatele-prava-diskove-kvoty.adoc">asciidoc</link>]</simpara>
+</listitem>
+<listitem>
+<simpara>Souborové systémy, zabezpečení a diskové kvóty [<link xl:href="04-souborove-systemy-zabezpeceni-opravneni/04-souborove-systemy-zabezpeceni-opravneni.html">html</link>] [<link xl:href="04-souborove-systemy-zabezpeceni-opravneni/04-souborove-systemy-zabezpeceni-opravneni.pdf">pdf</link>] [<link xl:href="04-souborove-systemy-zabezpeceni-opravneni/04-souborove-systemy-zabezpeceni-opravneni.adoc">asciidoc</link>]</simpara>
+</listitem>
+<listitem>
+<simpara>Datová úložiště a zálohování [<link xl:href="005-datova-uloziste-zalohovani/05-datova-uloziste-zalohovani.html">html</link>] [<link xl:href="05-datova-uloziste-zalohovani/05-datova-uloziste-zalohovani.pdf">pdf</link>] [<link xl:href="05-datova-uloziste-zalohovani/05-datova-uloziste-zalohovani.adoc">asciidoc</link>]</simpara>
 </listitem>
 </orderedlist>
 </chapter>

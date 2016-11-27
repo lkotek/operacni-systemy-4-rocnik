@@ -1,4 +1,4 @@
-= Správa uživatelů, přístupová práva a diskové kvóty
+= Správa uživatelů, přístupová práva a skupiny
 :source-highlighter: coderay
 :listing-caption: Listing
 :pdf-page-size: A4
@@ -10,37 +10,70 @@
 
 == Uživatelé a skupiny
 
+Uživatelé a skupiny v opračních systémech tvoří základní prvek, na který mohou být vztažena oprávnění. Ať již se jedná o jednotlivéhoho uživatele, nebo o členy skupiny. Oprávnění mohou být vztažena jak k úkonům v rámci souborového systému (např. vyvožot, upravit a smazat soubor), tak v rámci operačního systému jako takového (po zařazení do určité skupiny např. může uživatel instalovat software apod.). 
+
 === Pojetí na MS Windows
 ==== Lokální a doménové účty
+
+.Lokální účet:
+Účet platný pouze v rámci dané instance operačního systému. Není možné ho využít v rámci celé počítačové sítě, není přenositelný jinam.
+
+.Doménový účet:
+Účet poskytovaný v rámci LDAP serveru (např. Active Directory), síťové účty jsou použitelné na více počítačích v síti pracujících pod jedním doménovým řadičem.
+
 ==== Základní konfigurace
 
 === Pojetí v GNU/Linuxu
 ==== Základní principy
+
+I na GNU/Linuxu mohou být definováni uživatelské účty lokální a uživatelské účty existující v rámci LDAP serveru (např. OpenLDAP). Lokální uživatelské účty jsou uloženy v souboru passwd, účty skupin v group a hesla v zahashované podobě v soubory shadow.
+
 ==== Soubory passwd a shadow
+
+.Soubor passwd
+
+Soubor se základními informacemi o uživatelích, jejich vlastnostech (domovském adresáři, výchozím shellu apod.).
+
+.Soubor shadow
+
+Soubor s informacemi o heslech (v zahashované podobě), jejich platnosti, o stavu účtu (uzamčen apod.).
+
 ==== Základní utility
+
+useradd (a skript adduser), usermod, passwd
 
 == Oprávnění
 === Pojetí v MS Windows
 
+Více úrovní oprávnění a druhů skupin. Za nejvyšší úroveň oprávnění vztažitelného např. ke složce lze označit "úplné řízení".
+
 === Pojetí v GNU/Linuxu
 ==== Principy oprávnění
+
+Oprávnění jsou členěna na:
+
+. Oprávnění ke čtení (4)
+. Oprávnění k zápisu (2)
+. Oprávnění ke spuštění (1)
+
+TIP: Co značí oprávnění 754?
+
+NOTE: Výše zmíněná oprávnění jsou vztahována k danému záznamu (o souboru, složce apod.), který má přiřazeného svého vlastníka, skupinu, dále také rozlišujeme všechny ostatní uživatele v rámci operačního systému.
+
 ==== Základní příkazy
 
-== Diskové kvóty
-=== Princip kvót
-=== Příkazy a nastavení
+chmod, chown
 
 == Klíčové pojmy
 
-TODO
+lokální účet, doménový účet, passwd, shadow, rwx, 750, vlastník, skupina
 
-== Použité zdroje
+== Použité zdroje a kam dál?
 
-TODO
-
-== Kam dál?
-
-TODO
+. https://technet.microsoft.com/cs-cz/library/cc754344(v=ws.11).aspx
+. http://www.samuraj-cz.com/clanek/opravneni-u-souboru-a-slozek-ve-windows/
+. http://www.abclinuxu.cz/ucebnice/zaklady/principy-prace-se-systemem/pristupova-prava
+. http://www.abclinuxu.cz/clanky/navody/unixove-nastroje-5-opravneni-chmod-chown-chgrp
 
 ---
 

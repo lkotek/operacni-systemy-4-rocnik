@@ -5,7 +5,7 @@
 <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 1.5.4">
-<title>Správa uživatelů, přístupová práva a skupiny</title>
+<title>Správa paměti a prostředků systému (procesy, služby, logování)</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
 /* Asciidoctor default stylesheet | MIT License | http://asciidoctor.org */
@@ -511,109 +511,13 @@ table.CodeRay td.code>pre{padding:0}
 </head>
 <body class="book">
 <div id="header">
-<h1>Správa uživatelů, přístupová práva a skupiny</h1>
+<h1>Správa paměti a prostředků systému (procesy, služby, logování)</h1>
 </div>
 <div id="content">
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
 <p>&#169; Lukáš Kotek, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA 4.0</a></p>
-</div>
-<div style="page-break-after: always;"></div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_uživatelé_a_skupiny">Uživatelé a skupiny</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>Uživatelé a skupiny v opračních systémech tvoří základní prvek, na který mohou být vztažena oprávnění. Ať již se jedná o jednotlivéhoho uživatele, nebo o členy skupiny. Oprávnění mohou být vztažena jak k úkonům v rámci souborového systému (např. vyvožot, upravit a smazat soubor), tak v rámci operačního systému jako takového (po zařazení do určité skupiny např. může uživatel instalovat software apod.).</p>
-</div>
-<div class="sect2">
-<h3 id="_pojetí_na_ms_windows">Pojetí na MS Windows</h3>
-<div class="sect3">
-<h4 id="_lokální_a_doménové_účty">Lokální a doménové účty</h4>
-<div class="paragraph">
-<div class="title">Lokální účet:</div>
-<p>Účet platný pouze v rámci dané instance operačního systému. Není možné ho využít v rámci celé počítačové sítě, není přenositelný jinam.</p>
-</div>
-<div class="paragraph">
-<div class="title">Doménový účet:</div>
-<p>Účet poskytovaný v rámci LDAP serveru (např. Active Directory), síťové účty jsou použitelné na více počítačích v síti pracujících pod jedním doménovým řadičem.</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_základní_konfigurace">Základní konfigurace</h4>
-
-</div>
-</div>
-<div class="sect2">
-<h3 id="_pojetí_v_gnu_linuxu">Pojetí v GNU/Linuxu</h3>
-<div class="sect3">
-<h4 id="_základní_principy">Základní principy</h4>
-<div class="paragraph">
-<p>I na GNU/Linuxu mohou být definováni uživatelské účty lokální a uživatelské účty existující v rámci LDAP serveru (např. OpenLDAP). Lokální uživatelské účty jsou uloženy v souboru passwd, účty skupin v group a hesla v zahashované podobě v soubory shadow.</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_soubory_passwd_a_shadow">Soubory passwd a shadow</h4>
-<div class="paragraph">
-<div class="title">Soubor passwd</div>
-<p>Soubor se základními informacemi o uživatelích, jejich vlastnostech (domovském adresáři, výchozím shellu apod.).</p>
-</div>
-<div class="paragraph">
-<div class="title">Soubor shadow</div>
-<p>Soubor s informacemi o heslech (v zahashované podobě), jejich platnosti, o stavu účtu (uzamčen apod.).</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_základní_utility">Základní utility</h4>
-<div class="paragraph">
-<p>useradd (a skript adduser), usermod, passwd</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_oprávnění">Oprávnění</h2>
-<div class="sectionbody">
-<div class="sect2">
-<h3 id="_pojetí_v_ms_windows">Pojetí v MS Windows</h3>
-<div class="paragraph">
-<p>Více úrovní oprávnění a druhů skupin. Za nejvyšší úroveň oprávnění vztažitelného např. ke složce lze označit "úplné řízení".</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_pojetí_v_gnu_linuxu_2">Pojetí v GNU/Linuxu</h3>
-<div class="sect3">
-<h4 id="_principy_oprávnění">Principy oprávnění</h4>
-<div class="paragraph">
-<p>Oprávnění jsou členěna na:</p>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Oprávnění ke čtení (4)</p>
-</li>
-<li>
-<p>Oprávnění k zápisu (2)</p>
-</li>
-<li>
-<p>Oprávnění ke spuštění (1)</p>
-</li>
-</ol>
-</div>
-<div class="admonitionblock tip">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
-</td>
-<td class="content">
-Co značí oprávnění 754?
-</td>
-</tr>
-</table>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -622,53 +526,41 @@ Co značí oprávnění 754?
 <i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
-Výše zmíněná oprávnění jsou vztahována k danému záznamu (o souboru, složce apod.), který má přiřazeného svého vlastníka, skupinu, dále také rozlišujeme všechny ostatní uživatele v rámci operačního systému.
+Tento dokument je <strong>NEHOTOVÁ</strong> prázdná šablona. Materiály budou v rámci roku průběžně doplňovány.
 </td>
 </tr>
 </table>
 </div>
-</div>
-<div class="sect3">
-<h4 id="_základní_příkazy">Základní příkazy</h4>
-<div class="paragraph">
-<p>chmod, chown</p>
-</div>
-</div>
-</div>
+<div style="page-break-after: always;"></div>
 </div>
 </div>
 <div class="sect1">
 <h2 id="_klíčové_pojmy">Klíčové pojmy</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>lokální účet, doménový účet, passwd, shadow, rwx, 750, vlastník, skupina</p>
+<p>TODO</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_použité_zdroje_a_kam_dál">Použité zdroje a kam dál?</h2>
+<h2 id="_použité_zdroje">Použité zdroje</h2>
 <div class="sectionbody">
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p><a href="https://technet.microsoft.com/cs-cz/library/cc754344(v=ws.11).aspx" class="bare">https://technet.microsoft.com/cs-cz/library/cc754344(v=ws.11).aspx</a></p>
-</li>
-<li>
-<p><a href="http://www.samuraj-cz.com/clanek/opravneni-u-souboru-a-slozek-ve-windows/" class="bare">http://www.samuraj-cz.com/clanek/opravneni-u-souboru-a-slozek-ve-windows/</a></p>
-</li>
-<li>
-<p><a href="http://www.abclinuxu.cz/ucebnice/zaklady/principy-prace-se-systemem/pristupova-prava" class="bare">http://www.abclinuxu.cz/ucebnice/zaklady/principy-prace-se-systemem/pristupova-prava</a></p>
-</li>
-<li>
-<p><a href="http://www.abclinuxu.cz/clanky/navody/unixove-nastroje-5-opravneni-chmod-chown-chgrp" class="bare">http://www.abclinuxu.cz/clanky/navody/unixove-nastroje-5-opravneni-chmod-chown-chgrp</a></p>
-</li>
-</ol>
+<div class="paragraph">
+<p>TODO</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_kam_dál">Kam dál?</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>TODO</p>
 </div>
 <hr>
 <div class="ulist">
 <ul>
 <li>
-<p>Přehled kapitol: [<a href="../README.html">html</a>] [<a href="../README.pdf">pdf</a>] [<a href="../README.asciidoc">asciidoc</a>]</p>
+<p>Přehled kapitol: [<a href="../README.html">html</a>] [<a href="../README.md">asciidoc</a>]</p>
 </li>
 </ul>
 </div>
@@ -677,7 +569,7 @@ Výše zmíněná oprávnění jsou vztahována k danému záznamu (o souboru, s
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2016-11-27 22:09:47 CET
+Last updated 2016-09-06 17:51:30 CEST
 </div>
 </div>
 </body>

@@ -16,4 +16,10 @@ NOTE: Tento dokument nemá ambici v žádném slova smyslu suplovat technickou d
 
 . GNU/Linux -- historie, pojmy a svobodný software [link:02-linux-historie-pojmy-svobodny-software/02-linux-historie-pojmy-svobodny-software.html[html]] [link:02-linux-historie-pojmy-svobodny-software/02-linux-historie-pojmy-svobodny-software.pdf[pdf]] [link:02-linux-historie-pojmy-svobodny-software/02-linux-historie-pojmy-svobodny-software.adoc[asciidoc]]
 
-. Správa uživatelů, přístupová práva a diskové kvóty [link:03-uzivatele-prava-diskove-kvoty/03-uzivatele-prava-diskove-kvoty.html[html]] [link:03-uzivatele-prava-diskove-kvoty/03-uzivatele-prava-diskove-kvoty.pdf[pdf]] [link:03-uzivatele-prava-diskove-kvoty/03-uzivatele-prava-diskove-kvoty.adoc[asciidoc]]
+. Správa uživatelů, přístupová práva a skupiny [link:03-uzivatele-prava-diskove-kvoty/03-uzivatele-prava-diskove-kvoty.html[html]] [link:03-uzivatele-prava-diskove-kvoty/03-uzivatele-prava-diskove-kvoty.pdf[pdf]] [link:03-uzivatele-prava-diskove-kvoty/03-uzivatele-prava-diskove-kvoty.adoc[asciidoc]]
+
+. Souborové systémy, zabezpečení a diskové kvóty [link:04-souborove-systemy-zabezpeceni-opravneni/04-souborove-systemy-zabezpeceni-opravneni.html[html]] [link:04-souborove-systemy-zabezpeceni-opravneni/04-souborove-systemy-zabezpeceni-opravneni.pdf[pdf]] [link:04-souborove-systemy-zabezpeceni-opravneni/04-souborove-systemy-zabezpeceni-opravneni.adoc[asciidoc]]
+
+. Datová úložiště a zálohování [link:005-datova-uloziste-zalohovani/05-datova-uloziste-zalohovani.html[html]] [link:05-datova-uloziste-zalohovani/05-datova-uloziste-zalohovani.pdf[pdf]] [link:05-datova-uloziste-zalohovani/05-datova-uloziste-zalohovani.adoc[asciidoc]]
+
+

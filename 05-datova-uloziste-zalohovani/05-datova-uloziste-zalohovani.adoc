@@ -6,9 +6,24 @@
 
 (C) Lukáš Kotek, link:https://creativecommons.org/licenses/by-sa/4.0/[CC-BY-SA 4.0]
 
-NOTE: Tento dokument je *NEHOTOVÁ* prázdná šablona. Materiály budou v rámci roku průběžně doplňovány.
-
 <<<
+
+== Proč zálohovat data?
+
+== Druhy zálohování
+
+=== Plná záloha
+=== Inkrementální záloha
+=== Rozdílová záloha
+
+NOTE: K čemu slouží RAID?
+
+== Média pro zálohování
+
+== Nástroje pro zálohování
+
+=== Nástroje v MS Windows
+=== Nástroje v unixových systémech
 
 == Klíčové pojmy
 
@@ -24,5 +39,5 @@ TODO
 
 ---
 
-- Přehled kapitol: [link:../README.html[html]] [link:../README.md[asciidoc]]
+- Přehled kapitol: [link:../README.html[html]] [link:../README.pdf[pdf]] [link:../README.asciidoc[asciidoc]]
 

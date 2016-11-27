@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?asciidoc-toc?>
+<?asciidoc-numbered?>
+<book xmlns="http://docbook.org/ns/docbook" xmlns:xl="http://www.w3.org/1999/xlink" version="5.0" xml:lang="en">
+<info>
+<title>Základy teorie PC sítí</title>
+<date>2016-09-06</date>
+</info>
+<preface>
+<title></title>
+<simpara>&#169; Lukáš Kotek, <link xl:href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA 4.0</link></simpara>
+<note>
+<simpara>Tento dokument je <emphasis role="strong">NEHOTOVÁ</emphasis> prázdná šablona. Materiály budou v rámci roku průběžně doplňovány.</simpara>
+</note>
+<simpara><?asciidoc-pagebreak?></simpara>
+</preface>
+<chapter xml:id="_klíčové_pojmy">
+<title>Klíčové pojmy</title>
+<simpara>TODO</simpara>
+</chapter>
+<chapter xml:id="_použité_zdroje">
+<title>Použité zdroje</title>
+<simpara>TODO</simpara>
+</chapter>
+<chapter xml:id="_kam_dál">
+<title>Kam dál?</title>
+<simpara>TODO</simpara>
+<simpara><?asciidoc-hr?></simpara>
+<itemizedlist>
+<listitem>
+<simpara>Přehled kapitol: [<link xl:href="../README.html">html</link>] [<link xl:href="../README.md">asciidoc</link>]</simpara>
+</listitem>
+</itemizedlist>
+</chapter>
+</book>
