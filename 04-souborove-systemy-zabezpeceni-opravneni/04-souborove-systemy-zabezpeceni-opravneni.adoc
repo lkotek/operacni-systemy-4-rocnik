@@ -1,4 +1,4 @@
-= ouborové systémy, zabezpečení a diskové kvóty
+= Souborové systémy, zabezpečení a diskové kvóty
 :source-highlighter: coderay
 :listing-caption: Listing
 :pdf-page-size: A4
