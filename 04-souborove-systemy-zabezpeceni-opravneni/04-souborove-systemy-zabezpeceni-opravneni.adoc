@@ -22,7 +22,7 @@ Spíše historické souborové systémy z dílny Microsoftu, dnes nejtypičtěj�
 
 Souborový systém od Microsoftu, který v současné verzi podporuje všechny klíčové prvky moderních filesystémů (žurnálování, oprávnění apod.). Již delší dobu podporuje i pojetí symbolických a pevných odkazů (uvedeno cca v době MS Windows Vista).
 
-.ext2, ext3, ext3, xfs
+.ext2, ext3, ext4, xfs
 
 Souborové systémy typické pro operační systém GNU/Linux, vyjma ext2 podporují žurnálování. Podporují pevné a symbolické odkazy a další prvky typické pro klasické unixové filesystémy. Základním kamenem jejich pojetí je inode.
 
