@@ -10,7 +10,7 @@
 
 == Uživatelé a skupiny
 
-Uživatelé a skupiny v opračních systémech tvoří základní prvek, na který mohou být vztažena oprávnění. Ať již se jedná o jednotlivéhoho uživatele, nebo o členy skupiny. Oprávnění mohou být vztažena jak k úkonům v rámci souborového systému (např. vyvožot, upravit a smazat soubor), tak v rámci operačního systému jako takového (po zařazení do určité skupiny např. může uživatel instalovat software apod.). 
+Uživatelé a skupiny v opračních systémech tvoří základní prvek, na který mohou být vztažena oprávnění. Ať již se jedná o jednotlivéhoho uživatele, nebo o členy skupiny. Oprávnění mohou být vztažena jak k úkonům v rámci souborového systému (např. číst, upravit a smazat soubor), tak v rámci operačního systému jako takového (po zařazení do určité skupiny např. může uživatel instalovat software apod.). 
 
 === Pojetí na MS Windows
 ==== Lokální a doménové účty
